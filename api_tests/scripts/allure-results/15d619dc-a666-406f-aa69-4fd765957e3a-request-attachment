@@ -1,0 +1,15 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v1/draw-games/wagers
+[
+	{
+		"type": "NORMAL",
+		"duration": 1,
+		"delay" : 0,
+		"gameName": "Numbers",
+		"price": 50,
+		"stake": 50,
+		"boards": [{ "primarySelections":[1,2], "betType":"frn2","quickPickCount":2,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":0,"secondarySelectionsQuickpicked":false,"multiplier":false,"quickpick":true}],
+	     "drawNames": ["EVENING"],
+  	     "requestId": "0odjug1j4t97tv449ruo53u72xx6qeko82e5",
+		"digest": "bc0744c426778953bd284c29e9877ab1326c4bf249e0e9936f8b10abeb3b4bd2"
+	}
+]

@@ -1,0 +1,38 @@
+[{
+    "status": "ACCEPTED",
+    "type": "NORMAL",
+    "drawId": "98",
+    "duration": 1,
+    "delay": 0,
+    "gameName": "Powerball",
+    "price": 200,
+    "id": "IR-16767-15744417047288452950-13050902022195364592-12",
+    "requestId": "dq7v66sxx3jqpml65424b50sxe2uwn61c2eg",
+    "serialNumber": "16767-000001600-12",
+    "boards": [    {
+        "quickpick": true,
+        "multiplier": false,
+        "primarySelections":         [
+            "21",
+            "34",
+            "48",
+            "49",
+            "62"
+        ],
+        "secondarySelections": ["2"],
+        "primarySelectionsQuickpicked": true,
+        "secondarySelectionsQuickpicked": true,
+        "quickPickCount": 5,
+        "secondaryQuickPickCount": 1
+    }],
+    "stake": 200,
+    "digest": "b6f63f03f59a4ae800d155a2a17a5ee63b688e69c6862011f8f4065bfdea0929",
+    "drawStartDate": 1701139805000,
+    "drawEndDate": 1701139805000,
+    "drawDates": [1701139805000],
+    "discountAmount": 0,
+    "extraPlayed": false,
+    "autoTopUp": false,
+    "bullseyePlayed": false,
+    "playOptions": []
+}]

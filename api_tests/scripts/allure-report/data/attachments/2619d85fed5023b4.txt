@@ -1,0 +1,19 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v2/draw-games/subscriptions/
+{
+  "subscriptionDuration": 1,
+  "autoRenew": true,
+  "autoTopUp": false,
+  "drawDays": [ "MONDAY", "TUESDAY" , "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY" ],
+  "wager": {
+    "type":"NORMAL",
+    "duration": 1,
+    "gameName": "Wild Money",
+    "price": 100,
+    "stake": 100,
+    "boards":[{ "primarySelections":[32,9,19,25,27],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":0,"secondarySelectionsQuickpicked":true,"multiplier":false,"quickpick":true}],
+    "groupId": null,
+    "requestId": "sec2kz18k4h9d2y13r1ui9lr8o7hcxg3fsma",
+    "digest": "da8e001c81ec28b179a2c2364663d5059fdf8bd581a463c1d91a47c363d9f51b"
+  },
+  "parentId": null
+}

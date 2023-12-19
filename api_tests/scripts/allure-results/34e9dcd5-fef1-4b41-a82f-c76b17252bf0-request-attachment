@@ -1,0 +1,4 @@
+[Select Statement] select public_correlation_id from txstore.tx_transaction where uuid='IR-16767-9803508953983963115-12907650696826786961-15' 
+
+
+

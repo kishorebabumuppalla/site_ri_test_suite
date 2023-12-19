@@ -1,0 +1,1 @@
+https://cmdsecgw-rhi-lot-cmd-s1-northeurope.igtilotterycmdtest.com/api/v1/players/self/providers/game-replay/2252/dq7v66sxx3jqpml65424b50sxe2uwn61c2eg?roundId=dq7v66sxx3jqpml65424b50sxe2uwn61c2eg&gameId=2252

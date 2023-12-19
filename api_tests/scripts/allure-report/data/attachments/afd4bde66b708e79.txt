@@ -1,0 +1,56 @@
+{
+    "totalItems": 1,
+    "pageSize": 50,
+    "page": 1,
+    "rounds": [    {
+        "transactions": [        {
+            "type": "PURCHASE",
+            "purchaseDetail":             {
+                "amountType": "REAL_MONEY",
+                "externalTransactionId": "dq7v66sxx3jqpml65424b50sxe2uwn61c2eg",
+                "amount": 200,
+                "bonusAmount": 0,
+                "walletReserveId": "4874",
+                "walletConfirmId": "4874",
+                "reserveDate": 1702624107014,
+                "confirmDate": 1702624107014,
+                "purchaseStatus": "ISSUED"
+            },
+            "paymentDetail": null,
+            "executionDate": 1702624106840
+        }],
+        "roundId": "dq7v66sxx3jqpml65424b50sxe2uwn61c2eg",
+        "startDate": 1702624106840,
+        "purchaseAmount": 200,
+        "purchaseLoyPoint": null,
+        "paymentGrossAmount": null,
+        "paymentNetAmount": null,
+        "refundedAmount": null,
+        "earnedLoyPoint": null,
+        "refundedLoyPoint": null,
+        "jackpotAmount": null,
+        "taxableAmount": null,
+        "taxAmount": null,
+        "status": "ISSUED"
+    }],
+    "gameSessionDto":     {
+        "gameSessionId": "dq7v66sxx3jqpml65424b50sxe2uwn61c2eg",
+        "platformId": 70,
+        "platformName": "LOTTERY",
+        "gameId": "2252",
+        "gameName": "Powerball",
+        "totalPurchaseAmount": 200,
+        "totalPurchaseLoyaltyPoint": 0,
+        "totalWinningAmount": 0,
+        "totalRefundAmount": 0,
+        "totalEarnedLoyaltyPoint": 0,
+        "gameSessionStartDate": 1702624106000,
+        "gameSessionEndDate": null,
+        "currency": "USD",
+        "subscriptionId": null,
+        "lastWagerDate": 1702624106000,
+        "lastWinningDate": null,
+        "totalClaimingPrize": 0,
+        "gameCode": "12"
+    }
+}

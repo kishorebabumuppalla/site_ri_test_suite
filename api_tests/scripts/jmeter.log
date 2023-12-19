@@ -1,0 +1,599 @@
+2023-12-15 12:18:00,969 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2023-12-15 12:18:00,985 INFO o.a.j.JMeter: Loading user properties from: D:\apache-jmeter-5.4.3\bin\user.properties
+2023-12-15 12:18:00,986 INFO o.a.j.JMeter: Loading system properties from: D:\apache-jmeter-5.4.3\bin\system.properties
+2023-12-15 12:18:00,996 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2023-12-15 12:18:00,996 INFO o.a.j.JMeter: Version 5.4.1
+2023-12-15 12:18:00,996 INFO o.a.j.JMeter: java.version=1.8.0_381
+2023-12-15 12:18:00,996 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2023-12-15 12:18:00,996 INFO o.a.j.JMeter: os.name=Windows 10
+2023-12-15 12:18:00,996 INFO o.a.j.JMeter: os.arch=amd64
+2023-12-15 12:18:00,996 INFO o.a.j.JMeter: os.version=10.0
+2023-12-15 12:18:00,996 INFO o.a.j.JMeter: file.encoding=Cp1252
+2023-12-15 12:18:00,998 INFO o.a.j.JMeter: java.awt.headless=null
+2023-12-15 12:18:00,998 INFO o.a.j.JMeter: Max memory     =1073741824
+2023-12-15 12:18:00,998 INFO o.a.j.JMeter: Available Processors =12
+2023-12-15 12:18:01,003 INFO o.a.j.JMeter: Default Locale=English (EN)
+2023-12-15 12:18:01,003 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2023-12-15 12:18:01,003 INFO o.a.j.JMeter: JMeterHome=D:\apache-jmeter-5.4.3
+2023-12-15 12:18:01,003 INFO o.a.j.JMeter: user.dir  =D:\PD22_RhodeIsland- Kishore\api_tests\scripts
+2023-12-15 12:18:01,003 INFO o.a.j.JMeter: PWD       =D:\PD22_RhodeIsland- Kishore\api_tests\scripts
+2023-12-15 12:18:01,005 INFO o.a.j.JMeter: IP: 10.93.130.39 Name: INHYD-KMUPPALA FullName: INHYD-KMUPPALA.myigt.com
+2023-12-15 12:18:01,119 INFO o.a.j.JMeter: Setting LAF to: laf:com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+2023-12-15 12:18:01,286 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2023-12-15 12:18:04,562 WARN o.j.r.PluginManager: Found JAR conflict: D:\apache-jmeter-5.4.3\lib\asm-9.0.jar and D:\apache-jmeter-5.4.3\lib\asm-1.0.2.jar
+2023-12-15 12:18:04,562 WARN o.j.r.PluginManager: Found JAR conflict: D:\apache-jmeter-5.4.3\lib\jmeter-plugins-cmn-jmeter-0.7.jar and D:\apache-jmeter-5.4.3\lib\jmeter-plugins-cmn-jmeter-0.4.jar
+2023-12-15 12:18:04,563 WARN o.j.r.PluginManager: Found JAR conflict: D:\apache-jmeter-5.4.3\lib\ext\commons-codec-1.9.jar and D:\apache-jmeter-5.4.3\lib\commons-codec-1.15.jar
+2023-12-15 12:18:04,563 WARN o.j.r.PluginManager: Found JAR conflict: D:\apache-jmeter-5.4.3\lib\ext\jmeter-plugins-manager-1.4.jar and D:\apache-jmeter-5.4.3\lib\ext\jmeter-plugins-manager-1.3.jar
+2023-12-15 12:18:04,563 WARN o.j.r.PluginManager: Found JAR conflict: D:\apache-jmeter-5.4.3\lib\ext\jmeter-plugins-manager-1.6.jar and D:\apache-jmeter-5.4.3\lib\ext\jmeter-plugins-manager-1.4.jar
+2023-12-15 12:18:04,563 WARN o.j.r.PluginManager: Found JAR conflict: D:\apache-jmeter-5.4.3\lib\ext\jmeter-plugins-manager-1.7.jar and D:\apache-jmeter-5.4.3\lib\ext\jmeter-plugins-manager-1.6.jar
+2023-12-15 12:18:04,563 WARN o.j.r.PluginManager: Found JAR conflict: D:\apache-jmeter-5.4.3\lib\ext\postgresql-42.2.20.jar and D:\apache-jmeter-5.4.3\lib\postgresql-42.2.20.jar
+2023-12-15 12:18:04,563 WARN o.j.r.PluginManager: Found JAR conflict: D:\apache-jmeter-5.4.3\lib\ext\sqlite-jdbc-3.7.2.jar and D:\apache-jmeter-5.4.3\lib\ext\sqlite-jdbc-3.36.0.3.jar
+2023-12-15 12:18:04,812 INFO o.a.j.JMeter: Loading file: Favourite_Suite_Kishore.jmx
+2023-12-15 12:18:04,813 INFO o.a.j.s.FileServer: Default base='D:\PD22_RhodeIsland- Kishore\api_tests\scripts'
+2023-12-15 12:18:04,815 INFO o.a.j.s.FileServer: Set new base='D:\PD22_RhodeIsland- Kishore\api_tests\scripts'
+2023-12-15 12:18:04,966 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2023-12-15 12:18:04,975 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2023-12-15 12:18:04,976 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2023-12-15 12:18:04,978 INFO o.a.j.s.SaveService: Loading file: Favourite_Suite_Kishore.jmx
+2023-12-15 12:18:05,927 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=windows_10-2efbae065ecf1eb3b9fed1dd1f672a42-gui
+2023-12-15 12:18:06,332 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2023-12-15 12:18:06,333 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2023-12-15 12:18:06,701 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-12-15 12:18:06,702 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-12-15 12:18:06,702 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-12-15 12:18:06,702 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-12-15 12:18:06,702 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2023-12-15 12:18:06,702 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2023-12-15 12:18:07,675 INFO o.a.j.s.FileServer: Set new base='D:\PD22_RhodeIsland- Kishore\api_tests\scripts'
+2023-12-15 12:18:10,613 WARN o.j.r.PluginManagerMenuItem: Failed to load plugin updates info
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alert.createSSLException(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.TransportContext.fatal(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.TransportContext.fatal(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.TransportContext.fatal(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.SSLHandshake.consume(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.HandshakeContext.dispatch(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.HandshakeContext.dispatch(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.TransportContext.dispatch(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.SSLTransport.decode(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_381]
+	at org.apache.http.conn.ssl.SSLSocketFactory.createLayeredSocket(SSLSocketFactory.java:570) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:554) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:415) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.jmeterplugins.repository.JARSourceHTTP.execute(JARSourceHTTP.java:499) ~[jmeter-plugins-manager-1.3.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.execute(JARSourceHTTP.java:494) ~[jmeter-plugins-manager-1.3.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getJSON(JARSourceHTTP.java:152) ~[jmeter-plugins-manager-1.3.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getRepositories(JARSourceHTTP.java:276) ~[jmeter-plugins-manager-1.3.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getRepo(JARSourceHTTP.java:304) ~[jmeter-plugins-manager-1.3.jar:?]
+	at org.jmeterplugins.repository.PluginManager.load(PluginManager.java:71) ~[jmeter-plugins-manager-1.3.jar:?]
+	at org.jmeterplugins.repository.PluginManagerMenuItem$1.run(PluginManagerMenuItem.java:41) [jmeter-plugins-manager-1.3.jar:?]
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.validator.Validator.validate(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source) ~[?:1.8.0_381]
+	... 29 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source) ~[?:1.8.0_381]
+	at java.security.cert.CertPathBuilder.build(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.validator.Validator.validate(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source) ~[?:1.8.0_381]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source) ~[?:1.8.0_381]
+	... 29 more
+2023-12-15 12:18:13,516 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2023-12-15 12:18:13,517 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2023-12-15 12:18:13,517 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2023-12-15 12:18:13,517 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2023-12-15 12:18:22,193 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:18:22,193 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:18:22,228 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:18:22,229 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:21:57,286 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:21:57,286 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:21:57,310 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:21:57,310 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:22:01,189 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:22:01,189 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:22:01,215 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:22:01,216 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:22:21,574 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:22:21,574 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:22:21,594 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:22:21,594 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:22:23,652 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:22:23,653 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:22:23,674 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:22:23,675 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:22:23,815 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:22:23,815 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:22:23,833 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:22:23,833 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:22:23,851 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:22:23,851 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:22:23,880 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:22:23,881 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:22:24,075 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-12-15 12:22:24,075 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-12-15 12:22:24,076 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-12-15 12:22:24,076 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2023-12-15 12:22:24,077 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2023-12-15 12:22:24,230 INFO c.t.j.e.c.PropertyReader: Property file reader - loading the properties from D://PD22_RhodeIsland- Kishore//api_tests/conf/conf.properties
+2023-12-15 12:22:24,231 INFO c.t.j.e.c.PropertyReader: Property file reader - loading the properties from D://PD22_RhodeIsland- Kishore//api_tests/conf/runtype.properties
+2023-12-15 12:22:24,252 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-12-15 12:22:24,254 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2023-12-15 12:22:24,255 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : [TG]-PRECONDITION 
+2023-12-15 12:22:24,255 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group [TG]-PRECONDITION.
+2023-12-15 12:22:24,255 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-12-15 12:22:24,255 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-12-15 12:22:24,259 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:22:24,260 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:22:24,309 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:22:24,309 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:22:24,339 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-12-15 12:22:24,339 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2023-12-15 12:22:24,342 INFO o.a.j.t.JMeterThread: Thread started: [TG]-PRECONDITION 1-1
+2023-12-15 12:22:24,346 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@1874490961
+2023-12-15 12:22:24,737 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv@1874490961
+2023-12-15 12:22:24,792 INFO o.a.j.u.BeanShellTestElement: user name isUn1633933739432RWR
+2023-12-15 12:22:24,808 INFO o.a.j.t.JMeterThread: Thread is done: [TG]-PRECONDITION 1-1
+2023-12-15 12:22:24,808 INFO o.a.j.t.JMeterThread: Thread finished: [TG]-PRECONDITION 1-1
+2023-12-15 12:22:24,809 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2023-12-15 12:22:24,829 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : [TG]-SMOKE
+2023-12-15 12:22:24,830 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group [TG]-SMOKE.
+2023-12-15 12:22:24,830 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-12-15 12:22:24,830 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-12-15 12:22:24,934 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-12-15 12:22:24,935 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-12-15 12:22:24,949 INFO o.a.j.t.JMeterThread: Thread started: [TG]-SMOKE 1-1
+2023-12-15 12:22:24,952 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@742629147
+2023-12-15 12:22:26,809 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = INHYD-KMUPPALA
+2023-12-15 12:22:26,820 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2023-12-15 12:22:27,053 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2023-12-15 12:22:27,056 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2023-12-15 12:22:27,057 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2023-12-15 12:22:27,061 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2023-12-15 12:22:27,061 INFO o.a.j.u.SSLManager: KeyStore created OK
+2023-12-15 12:22:27,061 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2023-12-15 12:22:28,654 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: failed; reason: Test failed: text expected to contain /tokenParams/
+2023-12-15 12:22:29,393 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: failed; reason: Test failed: code expected to contain /204/
+2023-12-15 12:22:31,538 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: failed; reason: Test failed: text expected to contain /tokenParams/
+2023-12-15 12:22:35,090 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:22:35,100 INFO o.a.j.m.J.Digest Calculation: Wild Money111001031293715
+2023-12-15 12:22:35,108 INFO o.a.j.m.J.Digest Calculation: Digest - 674642e88dd2ad2069f02586c0216992a0c6027c39d9a0654a75f5930721b09d
+2023-12-15 12:22:35,385 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: failed; reason: Test failed: text expected to contain /status":"ACTIVE"/
+2023-12-15 12:22:35,662 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: failed; reason: Test failed: text expected to contain /status":"ACTIVE"/
+2023-12-15 12:22:35,940 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: failed; reason: Test failed: text expected to contain /"status":"PAUSED"/
+2023-12-15 12:22:36,218 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: failed; reason: Test failed: text expected to contain /"status":"ACTIVE"/
+2023-12-15 12:22:36,499 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: failed; reason: Test failed: text expected to contain /"status":"CANCELLED"/
+2023-12-15 12:22:37,091 INFO o.a.j.g.a.Start: Stopping test
+2023-12-15 12:22:37,109 INFO o.a.j.t.JMeterThread: Stopping: [TG]-SMOKE 1-1
+2023-12-15 12:22:37,110 ERROR o.a.j.JMeter: Uncaught exception in thread Thread[Thread-6,6,main]
+java.lang.NumberFormatException: For input string: "${tc_counter}"
+	at java.lang.NumberFormatException.forInputString(Unknown Source) ~[?:1.8.0_381]
+	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_381]
+	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_381]
+	at org.apache.jmeter.functions.IntSum.execute(IntSum.java:66) ~[ApacheJMeter_functions.jar:5.4.1]
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:138) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:113) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:91) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:280) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.testelement.AbstractTestElement.getName(AbstractTestElement.java:164) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.threads.JMeterThread.interrupt(JMeterThread.java:830) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.threads.ThreadGroup.stopThread(ThreadGroup.java:374) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.threads.ThreadGroup.lambda$tellThreadsToStop$0(ThreadGroup.java:401) ~[ApacheJMeter_core.jar:5.4.1]
+	at java.util.concurrent.ConcurrentHashMap.forEach(Unknown Source) ~[?:1.8.0_381]
+	at org.apache.jmeter.threads.ThreadGroup.tellThreadsToStop(ThreadGroup.java:401) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.threads.ThreadGroup.tellThreadsToStop(ThreadGroup.java:419) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.engine.StandardJMeterEngine$StopTest.tellThreadGroupsToStop(StandardJMeterEngine.java:285) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.engine.StandardJMeterEngine$StopTest.run(StandardJMeterEngine.java:325) ~[ApacheJMeter_core.jar:5.4.1]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_381]
+2023-12-15 12:22:37,285 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: failed; reason: Test failed: text expected to contain /"status":"CANCELLED"/
+2023-12-15 12:22:37,290 INFO o.a.j.t.JMeterThread: Thread finished: [TG]-SMOKE 1-1
+2023-12-15 12:22:37,293 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-12-15 12:22:37,293 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv@1874490961
+2023-12-15 12:22:37,295 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@742629147
+2023-12-15 12:22:37,296 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@1874490961
+2023-12-15 12:22:37,298 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-12-15 12:26:54,439 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:26:54,439 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:26:54,460 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:26:54,460 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:26:57,895 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:26:57,895 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:26:57,915 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:26:57,915 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:26:58,178 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:26:58,178 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:26:58,197 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:26:58,198 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:26:58,216 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:26:58,216 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:26:58,249 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:26:58,250 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:26:58,356 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-12-15 12:26:58,357 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-12-15 12:26:58,426 INFO c.t.j.e.c.PropertyReader: Property file reader - loading the properties from D://PD22_RhodeIsland- Kishore//api_tests/conf/conf.properties
+2023-12-15 12:26:58,426 INFO c.t.j.e.c.PropertyReader: Property file reader - loading the properties from D://PD22_RhodeIsland- Kishore//api_tests/conf/runtype.properties
+2023-12-15 12:26:58,428 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-12-15 12:26:58,431 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2023-12-15 12:26:58,431 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : [TG]-PRECONDITION 
+2023-12-15 12:26:58,431 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group [TG]-PRECONDITION.
+2023-12-15 12:26:58,431 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-12-15 12:26:58,431 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-12-15 12:26:58,431 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:26:58,431 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:26:58,461 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:26:58,462 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:26:58,488 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-12-15 12:26:58,488 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2023-12-15 12:26:58,489 INFO o.a.j.t.JMeterThread: Thread started: [TG]-PRECONDITION 1-1
+2023-12-15 12:26:58,489 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@694754473
+2023-12-15 12:26:58,503 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv@694754473
+2023-12-15 12:26:58,505 INFO o.a.j.u.BeanShellTestElement: user name isUn1633933739432RWR
+2023-12-15 12:26:58,512 INFO o.a.j.t.JMeterThread: Thread is done: [TG]-PRECONDITION 1-1
+2023-12-15 12:26:58,512 INFO o.a.j.t.JMeterThread: Thread finished: [TG]-PRECONDITION 1-1
+2023-12-15 12:26:58,513 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2023-12-15 12:26:59,126 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : [TG]-SMOKE
+2023-12-15 12:26:59,127 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group [TG]-SMOKE.
+2023-12-15 12:26:59,127 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-12-15 12:26:59,128 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-12-15 12:26:59,231 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-12-15 12:26:59,231 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-12-15 12:26:59,236 INFO o.a.j.t.JMeterThread: Thread started: [TG]-SMOKE 1-1
+2023-12-15 12:26:59,238 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@1890697075
+2023-12-15 12:27:02,541 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:27:03,443 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:27:05,739 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:27:09,297 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:27:09,298 INFO o.a.j.m.J.Digest Calculation: Wild Money111002925163619
+2023-12-15 12:27:09,299 INFO o.a.j.m.J.Digest Calculation: Digest - 3fc9a644f349b1cb00644e803739da31ca15b7205c2405c5f148c63b017911bc
+2023-12-15 12:27:11,082 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:11,787 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:12,472 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:13,349 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:13,837 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:14,808 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:15,840 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:27:18,167 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:27:20,246 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:27:20,247 INFO o.a.j.m.J.Digest Calculation: Wild Money11100329192527
+2023-12-15 12:27:20,247 INFO o.a.j.m.J.Digest Calculation: Digest - da8e001c81ec28b179a2c2364663d5059fdf8bd581a463c1d91a47c363d9f51b
+2023-12-15 12:27:21,824 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:22,599 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:23,303 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:24,273 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:24,826 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:25,804 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:26,812 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:27:29,206 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:27:31,227 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:27:31,228 INFO o.a.j.m.J.Digest Calculation: Numbers115012
+2023-12-15 12:27:31,229 INFO o.a.j.m.J.Digest Calculation: Digest - bc0744c426778953bd284c29e9877ab1326c4bf249e0e9936f8b10abeb3b4bd2
+2023-12-15 12:27:32,635 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:33,545 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:27:35,889 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:27:39,957 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:27:39,957 INFO o.a.j.m.J.Digest Calculation: numbers= -->4522131295
+2023-12-15 12:27:39,957 INFO o.a.j.m.J.Digest Calculation: numbers= -->4522131295612484123
+2023-12-15 12:27:39,958 INFO o.a.j.m.J.Digest Calculation: numbers= -->452213129561248412313313712298
+2023-12-15 12:27:39,958 INFO o.a.j.m.J.Digest Calculation: Lucky For Life13200452213129561248412313313712298
+2023-12-15 12:27:39,958 INFO o.a.j.m.J.Digest Calculation: Digest - fba5eaa0ab0cf2e644bf084f80037fc95c85cbc0135021e6428e1717f1a1ffe7
+2023-12-15 12:27:41,706 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:42,481 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:43,184 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:44,179 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:44,722 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:45,679 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:46,699 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:27:48,998 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:27:50,944 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:27:50,944 INFO o.a.j.m.J.Digest Calculation: Numbers115056
+2023-12-15 12:27:50,944 INFO o.a.j.m.J.Digest Calculation: Digest - 843ec7b26bb0fde8f88baf2bb2850cd7a379af68d82d673e2b9507cef0bcb5a0
+2023-12-15 12:27:52,281 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:53,150 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:27:55,582 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:27:57,845 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:27:58,721 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:28:01,055 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:28:06,012 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:28:06,013 INFO o.a.j.m.J.Digest Calculation: numbers= -->4741035915
+2023-12-15 12:28:06,013 INFO o.a.j.m.J.Digest Calculation: numbers= -->47410359158124215915
+2023-12-15 12:28:06,013 INFO o.a.j.m.J.Digest Calculation: numbers= -->4741035915812421591521162630402
+2023-12-15 12:28:06,013 INFO o.a.j.m.J.Digest Calculation: numbers= -->4741035915812421591521162630402282184035
+2023-12-15 12:28:06,013 INFO o.a.j.m.J.Digest Calculation: Lucky For Life142004741035915812421591521162630402282184035
+2023-12-15 12:28:06,013 INFO o.a.j.m.J.Digest Calculation: Digest - c8a8444967e9509c0069cd2f019774711a8db633c053d5b8238f2275d3ec4af9
+2023-12-15 12:28:07,603 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:08,378 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:09,891 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:10,888 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:11,473 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:12,365 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:14,066 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:28:16,364 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:28:19,145 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:28:19,146 INFO o.a.j.m.J.Digest Calculation: numbers= -->1702241722
+2023-12-15 12:28:19,146 INFO o.a.j.m.J.Digest Calculation: Mega Millions112001702241722
+2023-12-15 12:28:19,146 INFO o.a.j.m.J.Digest Calculation: Digest - 4c21d609c076833180308c3cba72388bc3d40247dd6a06a05868c37905d92a71
+2023-12-15 12:28:20,860 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:21,447 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:22,122 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:22,970 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:23,450 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:24,423 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:25,459 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:28:27,754 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:28:29,836 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:28:29,836 INFO o.a.j.m.J.Digest Calculation: numbers= -->95166165813
+2023-12-15 12:28:29,836 INFO o.a.j.m.J.Digest Calculation: Mega Millions1120095166165813
+2023-12-15 12:28:29,836 INFO o.a.j.m.J.Digest Calculation: Digest - aa9a49dee74b1bcd87cc74064e2a184f16094e814de0e672c4f62220c2cdddb6
+2023-12-15 12:28:31,390 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:31,871 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:32,573 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:33,459 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:33,987 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:34,952 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:35,931 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:28:38,260 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:28:40,411 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:28:40,412 INFO o.a.j.m.J.Digest Calculation: Mega Millions11200172234466511
+2023-12-15 12:28:40,412 INFO o.a.j.m.J.Digest Calculation: Digest - 6c3f5f47603c3b48722bb608e287adc3db7406c66ab692b99319a9642d308fd2
+2023-12-15 12:28:41,745 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:42,629 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:28:44,962 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:28:46,945 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:28:46,945 INFO o.a.j.m.J.Digest Calculation: Mega Millions11200TRUE341227697
+2023-12-15 12:28:46,946 INFO o.a.j.m.J.Digest Calculation: Digest - 8e492d2dcde7f6786000a5169a6def300043471482c08171bd56918f116e39bd
+2023-12-15 12:28:48,282 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:49,181 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:28:51,515 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:28:53,613 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:28:53,614 INFO o.a.j.m.J.Digest Calculation: Keno1110014614306266697376
+2023-12-15 12:28:53,614 INFO o.a.j.m.J.Digest Calculation: Digest - a8cb91b55866f0f396036437f3f0f307dda76d22da791a1c6b983b6ced4892a0
+2023-12-15 12:28:55,149 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:28:56,021 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:28:58,343 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:29:00,429 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:29:00,430 INFO o.a.j.m.J.Digest Calculation: Powerball1120035495160656
+2023-12-15 12:29:00,430 INFO o.a.j.m.J.Digest Calculation: Digest - 3cd3928c81fb9bf9f4d97f265cf59d87e1bd8b2e70594713967997cd2b10921e
+2023-12-15 12:29:01,794 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:02,662 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:29:04,974 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:29:06,944 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:29:06,945 INFO o.a.j.m.J.Digest Calculation: Powerball11200TRUE354547574
+2023-12-15 12:29:06,945 INFO o.a.j.m.J.Digest Calculation: Digest - 42be7a4faa331fca317a9e66abdade7989008fd0d3ff258dab991d2d0355b239
+2023-12-15 12:29:08,246 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:09,139 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:29:11,438 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:29:14,185 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:29:14,186 INFO o.a.j.m.J.Digest Calculation: numbers= -->1261157534
+2023-12-15 12:29:14,187 INFO o.a.j.m.J.Digest Calculation: Powerball11200TRUE1261157534
+2023-12-15 12:29:14,187 INFO o.a.j.m.J.Digest Calculation: Digest - 151636490722a8938bb7d8e47e2f5d573f87ee43074a928c457a4ea4f5924fd6
+2023-12-15 12:29:15,755 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:16,589 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:17,241 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:18,099 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:18,572 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:19,561 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:21,309 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:29:23,629 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:29:30,471 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:29:30,472 INFO o.a.j.m.J.Digest Calculation: numbers= -->151264512914
+2023-12-15 12:29:30,472 INFO o.a.j.m.J.Digest Calculation: numbers= -->151264512914305816102512
+2023-12-15 12:29:30,472 INFO o.a.j.m.J.Digest Calculation: numbers= -->151264512914305816102512383660454714
+2023-12-15 12:29:30,472 INFO o.a.j.m.J.Digest Calculation: numbers= -->15126451291430581610251238366045471429552243824
+2023-12-15 12:29:30,472 INFO o.a.j.m.J.Digest Calculation: numbers= -->1512645129143058161025123836604547142955224382439325425519
+2023-12-15 12:29:30,472 INFO o.a.j.m.J.Digest Calculation: Powerball15200TRUE1512645129143058161025123836604547142955224382439325425519
+2023-12-15 12:29:30,472 INFO o.a.j.m.J.Digest Calculation: Digest - 173a36d3c5ac796c91676f8df624a8727bac606eed410c957e556b4331c4678d
+2023-12-15 12:29:32,207 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:32,890 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:33,546 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:34,398 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:34,882 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:35,846 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:36,865 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:29:37,537 WARN o.a.j.e.BoundaryExtractor: [BE]_min Board: Error while generating result. java.lang.IllegalArgumentException: bound must be positive
+2023-12-15 12:29:37,537 WARN o.a.j.e.BoundaryExtractor: [BE]_max Board: Error while generating result. java.lang.IllegalArgumentException: bound must be positive
+2023-12-15 12:29:37,537 WARN o.a.j.e.BoundaryExtractor: [BE]_min Price: Error while generating result. java.lang.IllegalArgumentException: bound must be positive
+2023-12-15 12:29:37,537 WARN o.a.j.e.BoundaryExtractor: [BE]_max Price: Error while generating result. java.lang.IllegalArgumentException: bound must be positive
+2023-12-15 12:29:37,537 WARN o.a.j.e.BoundaryExtractor: [BE]_min stakes: Error while generating result. java.lang.IllegalArgumentException: bound must be positive
+2023-12-15 12:29:37,537 WARN o.a.j.e.BoundaryExtractor: [BE]_max stakes: Error while generating result. java.lang.IllegalArgumentException: bound must be positive
+2023-12-15 12:29:37,538 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:38,602 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:39,646 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:40,697 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:41,753 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:42,806 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:45,319 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:29:52,367 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:53,243 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:54,302 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:55,184 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:56,134 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:57,023 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:58,018 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:58,903 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:29:59,954 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:30:02,364 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:30:02,859 INFO o.a.j.m.J.Digest Calculation: numofboards= -->
+2023-12-15 12:30:02,859 INFO o.a.j.m.J.Digest Calculation: Keno111002233651555768707879
+2023-12-15 12:30:02,859 INFO o.a.j.m.J.Digest Calculation: Digest - a8b0479a6acf2aa042a1a0266daf28584bd9cfbf78145b1a52aafcedbaccb14d
+2023-12-15 12:30:04,977 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:30:17,700 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:30:18,079 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:30:19,001 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:30:22,125 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:30:23,591 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:30:25,019 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:31:26,450 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:31:26,450 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:31:26,467 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:31:26,468 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:35:31,513 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:35:31,888 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:35:33,677 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:35:33,682 INFO o.a.j.t.JMeterThread: Thread is done: [TG]-SMOKE 1-1
+2023-12-15 12:35:33,682 INFO o.a.j.t.JMeterThread: Thread finished: [TG]-SMOKE 1-1
+2023-12-15 12:35:33,687 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-12-15 12:35:33,687 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv@694754473
+2023-12-15 12:35:33,688 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@694754473
+2023-12-15 12:35:33,688 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@1890697075
+2023-12-15 12:35:33,694 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-12-15 12:35:42,993 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:35:42,993 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:35:43,036 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:35:43,036 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:35:44,640 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:35:44,640 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:35:44,671 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:35:44,672 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:35:44,973 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:35:44,973 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:35:44,995 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:35:44,995 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:35:45,012 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:35:45,012 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:35:45,042 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:35:45,042 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:35:45,073 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-12-15 12:35:45,074 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-12-15 12:35:45,079 INFO c.t.j.e.c.PropertyReader: Property file reader - loading the properties from D://PD22_RhodeIsland- Kishore//api_tests/conf/conf.properties
+2023-12-15 12:35:45,080 INFO c.t.j.e.c.PropertyReader: Property file reader - loading the properties from D://PD22_RhodeIsland- Kishore//api_tests/conf/runtype.properties
+2023-12-15 12:35:45,085 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-12-15 12:35:45,088 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2023-12-15 12:35:45,088 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : [TG]-PRECONDITION 
+2023-12-15 12:35:45,088 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group [TG]-PRECONDITION.
+2023-12-15 12:35:45,088 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-12-15 12:35:45,088 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-12-15 12:35:45,088 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:35:45,089 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:35:45,119 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:35:45,119 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:35:45,148 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-12-15 12:35:45,148 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2023-12-15 12:35:45,148 INFO o.a.j.t.JMeterThread: Thread started: [TG]-PRECONDITION 1-1
+2023-12-15 12:35:45,149 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@462145931
+2023-12-15 12:35:45,161 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv@462145931
+2023-12-15 12:35:45,164 INFO o.a.j.u.BeanShellTestElement: user name isUn1633933739432RWR
+2023-12-15 12:35:45,172 INFO o.a.j.t.JMeterThread: Thread is done: [TG]-PRECONDITION 1-1
+2023-12-15 12:35:45,172 INFO o.a.j.t.JMeterThread: Thread finished: [TG]-PRECONDITION 1-1
+2023-12-15 12:35:45,172 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2023-12-15 12:35:45,810 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : [TG]-SMOKE
+2023-12-15 12:35:45,810 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group [TG]-SMOKE.
+2023-12-15 12:35:45,811 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-12-15 12:35:45,811 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-12-15 12:35:45,818 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-12-15 12:35:45,818 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-12-15 12:35:45,819 INFO o.a.j.t.JMeterThread: Thread started: [TG]-SMOKE 1-1
+2023-12-15 12:35:45,820 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@1573064962
+2023-12-15 12:35:49,048 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:35:52,232 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:36:03,538 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:36:04,289 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:36:04,309 ERROR o.a.j.p.j.s.JSR223Sampler: Problem in JSR223 script JSR223 Sampler, message: javax.script.ScriptException: In file: inline evaluation of: ``if(200==200 || 98==98 || 16767-000001592-12==16767-000001592-12 || true==true,\" . . . '' Encountered "92" at line 1, column 39.
+ in inline evaluation of: ``if(200==200 || 98==98 || 16767-000001592-12==16767-000001592-12 || true==true,\" . . . '' at line number 1
+javax.script.ScriptException: In file: inline evaluation of: ``if(200==200 || 98==98 || 16767-000001592-12==16767-000001592-12 || true==true,\" . . . '' Encountered "92" at line 1, column 39.
+ in inline evaluation of: ``if(200==200 || 98==98 || 16767-000001592-12==16767-000001592-12 || true==true,\" . . . '' at line number 1
+	at bsh.engine.BshScriptEngine.evalSource(BshScriptEngine.java:82) ~[bsh-2.0b6.jar:2.0b6 2016-02-05 05:16:19]
+	at bsh.engine.BshScriptEngine.eval(BshScriptEngine.java:46) ~[bsh-2.0b6.jar:2.0b6 2016-02-05 05:16:19]
+	at javax.script.AbstractScriptEngine.eval(Unknown Source) ~[?:1.8.0_381]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:219) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.protocol.java.sampler.JSR223Sampler.sample(JSR223Sampler.java:72) [ApacheJMeter_java.jar:5.4.1]
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:638) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:558) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.1]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_381]
+2023-12-15 12:36:05,217 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:36:05,224 INFO o.a.j.t.JMeterThread: Thread is done: [TG]-SMOKE 1-1
+2023-12-15 12:36:05,224 INFO o.a.j.t.JMeterThread: Thread finished: [TG]-SMOKE 1-1
+2023-12-15 12:36:05,225 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-12-15 12:36:05,225 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv@462145931
+2023-12-15 12:36:05,226 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@1573064962
+2023-12-15 12:36:05,226 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@462145931
+2023-12-15 12:36:05,231 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-12-15 12:37:36,090 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:37:36,090 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:37:36,108 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:37:36,108 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:38:17,030 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:38:17,030 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:38:17,048 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:38:17,049 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:38:19,595 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:38:19,595 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:38:19,613 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:38:19,613 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:38:19,756 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:38:19,756 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:38:19,839 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:38:19,839 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:38:19,859 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:38:19,859 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:38:19,903 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:38:19,903 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:38:19,938 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2023-12-15 12:38:19,938 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2023-12-15 12:38:19,945 INFO c.t.j.e.c.PropertyReader: Property file reader - loading the properties from D://PD22_RhodeIsland- Kishore//api_tests/conf/conf.properties
+2023-12-15 12:38:19,945 INFO c.t.j.e.c.PropertyReader: Property file reader - loading the properties from D://PD22_RhodeIsland- Kishore//api_tests/conf/runtype.properties
+2023-12-15 12:38:19,946 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2023-12-15 12:38:19,946 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2023-12-15 12:38:19,946 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : [TG]-PRECONDITION 
+2023-12-15 12:38:19,946 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group [TG]-PRECONDITION.
+2023-12-15 12:38:19,946 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-12-15 12:38:19,946 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-12-15 12:38:19,947 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 12:38:19,947 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 12:38:19,978 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 12:38:19,978 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx
+2023-12-15 12:38:20,002 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-12-15 12:38:20,003 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2023-12-15 12:38:20,003 INFO o.a.j.t.JMeterThread: Thread started: [TG]-PRECONDITION 1-1
+2023-12-15 12:38:20,004 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@1329000168
+2023-12-15 12:38:20,018 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv@1329000168
+2023-12-15 12:38:20,021 INFO o.a.j.u.BeanShellTestElement: user name isUn1633933739432RWR
+2023-12-15 12:38:20,028 INFO o.a.j.t.JMeterThread: Thread is done: [TG]-PRECONDITION 1-1
+2023-12-15 12:38:20,028 INFO o.a.j.t.JMeterThread: Thread finished: [TG]-PRECONDITION 1-1
+2023-12-15 12:38:20,028 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2023-12-15 12:38:20,614 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : [TG]-SMOKE
+2023-12-15 12:38:20,615 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group [TG]-SMOKE.
+2023-12-15 12:38:20,615 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2023-12-15 12:38:20,615 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2023-12-15 12:38:20,622 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2023-12-15 12:38:20,622 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2023-12-15 12:38:20,622 INFO o.a.j.t.JMeterThread: Thread started: [TG]-SMOKE 1-1
+2023-12-15 12:38:20,622 INFO o.a.j.s.FileServer: Stored: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv Alias: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@647678844
+2023-12-15 12:38:24,001 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Check Login Response: passed
+2023-12-15 12:38:27,470 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:38:39,390 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:38:39,879 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: Response Assertion: passed
+2023-12-15 12:38:40,838 INFO o.a.j.a.J.A.l.info: **** org.allure.reporter: [0] Step: [Response Assertion] Verify OAuth token deleted.: passed
+2023-12-15 12:38:40,845 INFO o.a.j.t.JMeterThread: Thread is done: [TG]-SMOKE 1-1
+2023-12-15 12:38:40,845 INFO o.a.j.t.JMeterThread: Thread finished: [TG]-SMOKE 1-1
+2023-12-15 12:38:40,849 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2023-12-15 12:38:40,850 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@647678844
+2023-12-15 12:38:40,852 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/players.csv@1329000168
+2023-12-15 12:38:40,852 INFO o.a.j.s.FileServer: Close: D://PD22_RhodeIsland- Kishore//api_tests//data/Allplayers.csv@1329000168
+2023-12-15 12:38:40,855 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2023-12-15 17:45:35,577 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\PRECONDITION-SETUP.jmx
+2023-12-15 17:45:35,601 INFO o.a.j.s.SaveService: Loading file: PRECONDITION-SETUP.jmx
+2023-12-15 17:45:35,741 INFO o.a.j.c.IncludeController: loadIncludedElements -- try to load included module: D:\PD22_RhodeIsland- Kishore\api_tests\scripts\CREATION-PLAYER.jmx
+2023-12-15 17:45:35,741 INFO o.a.j.s.SaveService: Loading file: CREATION-PLAYER.jmx

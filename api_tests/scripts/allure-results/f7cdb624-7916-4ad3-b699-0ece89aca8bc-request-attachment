@@ -1,0 +1,15 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v1/draw-games/wagers
+[
+	{
+		"type": "NORMAL",
+		"duration": 1,
+		"delay" : 0,
+		"gameName": "Numbers",
+		"price": 50,
+		"stake": 50,
+		"boards": [{ "primarySelections":[6,5], "betType":"frn2","quickPickCount":2,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":0,"secondarySelectionsQuickpicked":false,"multiplier":false,"quickpick":true}],
+	     "drawNames": [ "MIDDAY"],
+  	     "requestId": "cmb99bna9un4jpsgsf77y5pg8pd8befq2x4x",
+		"digest": "843ec7b26bb0fde8f88baf2bb2850cd7a379af68d82d673e2b9507cef0bcb5a0"
+	}
+]

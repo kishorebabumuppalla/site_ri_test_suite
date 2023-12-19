@@ -1,0 +1,14 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v1/draw-games/wagers
+[
+	{
+		"type": "NORMAL",
+		"duration": 1,
+		"delay" : 0,
+		"gameName": "Powerball",
+		"price": 200,
+		"stake": 200,
+		"boards": [{ "primarySelections":[14,26,32,40,60],"secondarySelections":[16],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":false,"quickpick":true}],
+  	     "requestId": "pp7egjp6d5ll8jbupi9l72t3gz98arurvni6",
+		"digest": "7272c61a9830545667b3ed658c157a0f64400782825259e46a5e9e7ca1acf159"
+	}
+]

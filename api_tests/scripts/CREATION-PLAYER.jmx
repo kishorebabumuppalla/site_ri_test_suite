@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="CreatePlayerTestSuite" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="CONF_PROPERTIES" elementType="Argument">
+            <stringProp name="Argument.name">CONF_PROPERTIES</stringProp>
+            <stringProp name="Argument.value">${__P(conf_path)}/conf.properties</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="RUNTYPE_CONF" elementType="Argument">
+            <stringProp name="Argument.name">RUNTYPE_CONF</stringProp>
+            <stringProp name="Argument.value">${__P(conf_path)}/runtype.properties</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <com.tag.jmeter.ext.config.PropertyReader guiclass="TestBeanGUI" testclass="com.tag.jmeter.ext.config.PropertyReader" testname="Load ConfPropos" enabled="true">
+        <stringProp name="propFilePath">${CONF_PROPERTIES}</stringProp>
+      </com.tag.jmeter.ext.config.PropertyReader>
+      <hashTree/>
+      <com.tag.jmeter.ext.config.PropertyReader guiclass="TestBeanGUI" testclass="com.tag.jmeter.ext.config.PropertyReader" testname="Load RuntypeConf" enabled="true">
+        <stringProp name="propFilePath">${RUNTYPE_CONF}</stringProp>
+      </com.tag.jmeter.ext.config.PropertyReader>
+      <hashTree/>
+      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration" enabled="true">
+        <boolProp name="autocommit">true</boolProp>
+        <stringProp name="checkQuery">select 1 from sysibm.sysdummy1</stringProp>
+        <stringProp name="connectionAge">5000</stringProp>
+        <stringProp name="dataSource">dbconnection</stringProp>
+        <stringProp name="dbUrl">jdbc:db2://${__P(DB2_HOST)}:${__P(DB2_PORT)}/CMDDB</stringProp>
+        <stringProp name="driver">com.ibm.db2.jcc.DB2Driver</stringProp>
+        <stringProp name="initQuery"></stringProp>
+        <boolProp name="keepAlive">true</boolProp>
+        <stringProp name="password">gtkinst1</stringProp>
+        <stringProp name="poolMax">1</stringProp>
+        <stringProp name="timeout">10000</stringProp>
+        <stringProp name="transactionIsolation">DEFAULT</stringProp>
+        <stringProp name="trimInterval">60000</stringProp>
+        <stringProp name="username">gtkinst1</stringProp>
+        <boolProp name="preinit">false</boolProp>
+        <stringProp name="connectionProperties"></stringProp>
+      </JDBCDataSource>
+      <hashTree/>
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="PRECONDITION-SETUP" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1499896347000</longProp>
+        <longProp name="ThreadGroup.end_time">1499896347000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </SetupThreadGroup>
+      <hashTree>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="PRECONDITION-SETUP-INCLUDE" enabled="true">
+          <stringProp name="IncludeController.includepath">PRECONDITION-SETUP.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+      </hashTree>
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="CREATE-PLAYER" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1499896347000</longProp>
+        <longProp name="ThreadGroup.end_time">1499896347000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </SetupThreadGroup>
+      <hashTree>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="CreatePlayer" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-1254215959">CreatePlayerTestSuite</stringProp>
+            <stringProp name="1606340381">CreatePlayer</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="CreatePlayer" enabled="true"/>
+      <hashTree>
+        <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="[UP]-0. Set test case properties" enabled="true">
+          <collectionProp name="UserParameters.names">
+            <stringProp name="-750825893">tc_name</stringProp>
+            <stringProp name="-849007572">tc_counter</stringProp>
+            <stringProp name="50511102">category</stringProp>
+            <stringProp name="109795064">suite</stringProp>
+          </collectionProp>
+          <collectionProp name="UserParameters.thread_values">
+            <collectionProp name="1400930122">
+              <stringProp name="1646493642">[TC]-Create a new player</stringProp>
+              <stringProp name="48">0</stringProp>
+              <stringProp name="-1185989415">Registration</stringProp>
+              <stringProp name="1666312664">PRECONDITION</stringProp>
+            </collectionProp>
+          </collectionProp>
+          <boolProp name="UserParameters.per_iteration">true</boolProp>
+        </UserParameters>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="CURRENCYDEPOSIT" elementType="Argument">
+              <stringProp name="Argument.name">CURRENCYDEPOSIT</stringProp>
+              <stringProp name="Argument.value">EUR</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="BRANDID" elementType="Argument">
+              <stringProp name="Argument.name">BRANDID</stringProp>
+              <stringProp name="Argument.value">${__P(BRANDID)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="AMOUNT" elementType="Argument">
+              <stringProp name="Argument.name">AMOUNT</stringProp>
+              <stringProp name="Argument.value">1000000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PARTNERID" elementType="Argument">
+              <stringProp name="Argument.name">PARTNERID</stringProp>
+              <stringProp name="Argument.value">${__P(PARTNERID)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)}. Perform Full Registration [API: /adapter/api/v2/players]" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+&quot;playerAgreements&quot;: {&#xd;
+&quot;commercialsViaEmail&quot;: &quot;true&quot;,&#xd;
+&quot;marketing&quot;: &quot;true&quot;,&#xd;
+&quot;sales&quot;: &quot;true&quot;,&#xd;
+&quot;pep&quot;: &quot;false&quot;,&#xd;
+&quot;privateBanking&quot;: &quot;true&quot;,&#xd;
+&quot;moneySource&quot;: &quot;kradziez&quot;&#xd;
+},&#xd;
+&quot;playerRegistrationLimits&quot;: {&#xd;
+&quot;dailyMoney&quot;: 100000,&#xd;
+&quot;monthlyMoney&quot;: 2500000,&#xd;
+&quot;dailyTime&quot;: 21600000,&#xd;
+&quot;monthlyTime&quot;: 324000000&#xd;
+},&#xd;
+&quot;bankAccounts&quot;: [&#xd;
+{&#xd;
+&quot;id&quot;: &quot;&quot;,&#xd;
+&quot;routingNumber&quot;: null,&#xd;
+&quot;referenceNumber&quot;: null,&#xd;
+&quot;accountNumber&quot;: &quot;${FullAccountNumber}&quot;&#xd;
+}&#xd;
+],&#xd;
+&quot;password&quot;: &quot;Welcome1&quot;,&#xd;
+&quot;collectorNo&quot;: &quot;14234176&quot;,&#xd;
+&quot;pltCitizenship&quot;: &quot;ES&quot;,&#xd;
+&quot;personalInfo&quot;: {&#xd;
+&quot;firstName&quot;: &quot;${fk_fname}&quot;,&#xd;
+&quot;lastName&quot;: &quot;${fk_lname}&quot;,&#xd;
+&quot;prefix&quot;: &quot;Mr&quot;,&#xd;
+&quot;gender&quot;: &quot;MALE&quot;,&#xd;
+&quot;addresses&quot;: {&#xd;
+&quot;MAILING&quot;: {&#xd;
+&quot;address1&quot;: &quot;ULYCA MAILING 1&quot;,&#xd;
+&quot;address2&quot;: &quot;111&quot;,&#xd;
+&quot;address3&quot;: &quot;222&quot;,&#xd;
+&quot;city&quot;: &quot;MAILING CITY&quot;,&#xd;
+&quot;postalCode&quot;: &quot;12345&quot;,&#xd;
+&quot;isoCountryCode&quot;: &quot;PL&quot;&#xd;
+},&#xd;
+&quot;BILLING&quot;: {&#xd;
+&quot;address1&quot;: &quot;ULYCA BILLING 1&quot;,&#xd;
+&quot;address2&quot;: &quot;111&quot;,&#xd;
+&quot;address3&quot;: &quot;222&quot;,&#xd;
+&quot;city&quot;: &quot;BILLING CITY&quot;,&#xd;
+&quot;postalCode&quot;: &quot;12345&quot;,&#xd;
+&quot;isoCountryCode&quot;: &quot;PL&quot;&#xd;
+}&#xd;
+},&#xd;
+&quot;phones&quot;: {&#xd;
+&quot;HOME&quot;: {&#xd;
+&quot;type&quot;: &quot;HOME&quot;,&#xd;
+&quot;number&quot;: &quot;${PhonePad}&quot;&#xd;
+},&#xd;
+&quot;MOBILE&quot;: {&#xd;
+&quot;type&quot;: &quot;MOBILE&quot;,&#xd;
+&quot;number&quot;: &quot;${MobilePad}&quot;&#xd;
+}&#xd;
+},&#xd;
+&quot;emails&quot;: {&#xd;
+&quot;PERSONAL&quot;: {&#xd;
+&quot;type&quot;: &quot;PERSONAL&quot;,&#xd;
+&quot;address&quot;: &quot;${fk_email}&quot;,&#xd;
+&quot;verified&quot;: false&#xd;
+}&#xd;
+},&#xd;
+&quot;citizenship&quot;: &quot;RESIDENT&quot;,&#xd;
+&quot;taxCategory&quot;: &quot;&quot;,&#xd;
+&quot;businessTitle&quot;: &quot;&quot;,&#xd;
+&quot;timeZone&quot;: &quot;&quot;,&#xd;
+&quot;passwordHints&quot;: [&#xd;
+{&#xd;
+&quot;securityQuestion&quot;: {&#xd;
+&quot;question&quot;: &quot;securityQuestion.pin&quot;&#xd;
+},&#xd;
+&quot;securityAnswer&quot;: {&#xd;
+&quot;answer&quot;: &quot;123456&quot;&#xd;
+}&#xd;
+}&#xd;
+],&#xd;
+&quot;dateOfBirth&quot;: 597070316091&#xd;
+},&#xd;
+&quot;profile&quot;: {&#xd;
+&quot;acceptsEmail&quot;: false,&#xd;
+&quot;acceptsRewards&quot;: true,&#xd;
+&quot;language&quot;: &quot;pl&quot;,&#xd;
+&quot;preferredCurrency&quot;: &quot;PLN&quot;,&#xd;
+&quot;nickName&quot;: &quot;Nick_${fk_uname}&quot;,&#xd;
+&quot;communicationPreferences&quot;: null,&#xd;
+&quot;preferredPaymentMode&quot;: &quot;&quot;,&#xd;
+&quot;registrationDate&quot;: 0,&#xd;
+&quot;registrationLevel&quot;: 2,&#xd;
+&quot;userName&quot;: &quot;${fk_uname}&quot;,&#xd;
+&quot;loyaltyTier&quot;: &quot;&quot;,&#xd;
+&quot;acceptedTermsAndConditionsDate&quot;: 1395424951771,&#xd;
+&quot;acceptTermsAndConditions&quot;: true,&#xd;
+&quot;termsAndConditionsId&quot;: &quot;1638449516071&quot;&#xd;
+},&#xd;
+&quot;nonpublicPersonalInfo&quot;: {&#xd;
+&quot;dateOfBirth&quot;: 597070316091,&#xd;
+&quot;feinNumber&quot;: &quot;&quot;,&#xd;
+&quot;identificationNumber&quot;: &quot;${PolishCardNumber}&quot;,&#xd;
+&quot;identificationIssuer&quot;: &quot;DMV&quot;,&#xd;
+&quot;socialSecurityNumber&quot;: &quot;${PeselNumber}&quot;,&#xd;
+&quot;securityCode&quot;: &quot;&quot;&#xd;
+},&#xd;
+&quot;playerCard&quot;: null,&#xd;
+&quot;optIntoGeoCompliance&quot;: false&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${__P(PDBROKERVIP)}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">${__P(PDBROKER_PROTOCOL)}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">adapter/api/v2/players</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Generate registration data - uname, email" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import java.util.Random;
+import org.apache.commons.lang.RandomStringUtils;
+
+Random r = new Random();
+
+int RanNum =r.nextInt(999999);
+
+// Email - Username - Mobile - Phone
+String MobilePad = String.format(&quot;%011d&quot; , RanNum);
+String PhonePad = String.format(&quot;%011d&quot; , RanNum+1)
+vars.putObject(&quot;MobilePad&quot;,MobilePad);
+vars.putObject(&quot;PhonePad&quot;,PhonePad);
+log.info(&quot;MobilePad -------------&gt; &quot;+MobilePad+&quot; PhoneNumber ----&gt; &quot;+PhonePad);
+
+String charset = (&apos;a&apos;..&apos;z&apos;).join();
+String ranFname = RandomStringUtils.random(9, charset.toCharArray());
+String ranLname = RandomStringUtils.random(5, charset.toCharArray());
+
+// Email - Username - Mobile - Phone
+String Email = ranLname+ranFname+&quot;@mailinator.com&quot;;
+String Username = ranFname+RanNum;
+
+log.info(&quot;Email-----------&gt;&quot;+Email);
+log.info(&quot;Username-----------&gt;&quot;+Username);
+
+vars.put(&quot;USERNAME&quot;,Username);
+vars.put(&quot;fk_uname&quot;,Username);
+vars.put(&quot;fk_fname&quot;,ranFname);
+vars.put(&quot;fk_lname&quot;,ranLname);
+vars.put(&quot;fk_email&quot;,Email);
+
+//eID
+String ch = (&apos;1&apos;..&apos;9&apos;).join();
+String eIDStr = RandomStringUtils.random(12, ch.toCharArray());
+vars.put(&quot;identification_number&quot;,eIDStr);
+
+log.info(&quot;email -----------&gt; &quot;+Email+&quot;username ------------ &gt; &quot;+Username);
+
+//NRN Calculation
+int RanYear =r.nextInt(49)+50;
+int RanMonth =r.nextInt(2)+10;
+int RanDay =r.nextInt(20)+10;
+int RanSex = r.nextInt(299)+100;
+String NRNCal = RanYear+&quot;&quot;+RanMonth+&quot;&quot;+RanDay+&quot;&quot;+RanSex;
+int NRNint = Integer.parseInt(NRNCal)
+int Check = 97 - (NRNint%97);
+String CheckPad = String.format(&quot;%02d&quot; , Check);
+String NRN = NRNCal+&quot;&quot;+CheckPad
+vars.putObject(&quot;NRN&quot;,NRN);
+log.info(&quot;NRN value ------------------------------------------------------------- ---&gt; &quot;+NRN);
+
+//Gender and Language
+String[] Gen = new String[]{&quot;MALE&quot;, &quot;FEMALE&quot;};
+String[] Lan = new String[]{&quot;nl_BE&quot;,&quot;fr_BE&quot;,&quot;fr_FR&quot;,&quot;en_US&quot;};
+int GenRan =r.nextInt(2);
+int LanRan = r.nextInt(4);
+String GenStr = Gen[GenRan];
+String LanStr = Lan[LanRan];
+vars.putObject(&quot;gender&quot;,GenStr);
+vars.putObject(&quot;language&quot;,LanStr);
+log.info(&quot;Gender value ---------- &gt; &quot;+GenStr+&quot; and Language -------&gt; &quot;+LanStr);</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Generate registration data - Pesel" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import org.apache.commons.lang.RandomStringUtils;
+import java.util.Random; 
+
+Random r = new Random();
+int RanYear =r.nextInt(49)+50;
+int RanMonth =r.nextInt(2)+10;
+int RanDay =r.nextInt(20)+10;
+int RanSex = r.nextInt(2)+1;
+int PersonalIDentificationNumber = r.nextInt(899)+100;
+
+//log.info &quot;Year - &quot; +RanYear
+//log.info &quot;Month - &quot; +RanMonth
+//log.info &quot;Day - &quot; +RanDay
+//log.info &quot;sex -&quot; +RanSex
+log.info(&quot;PersonalIdentification - &quot; +PersonalIDentificationNumber);
+
+ 
+
+String PeselDigits = RanYear.toString()+RanMonth.toString()+RanDay.toString()+PersonalIDentificationNumber.toString()+RanSex.toString();
+log.info(PeselDigits);
+
+ 
+
+int sum =0;
+def Multi = [1,3,7,9,1,3,7,9,1,3];
+for (int i = 0; i &lt; PeselDigits.length(); i++)
+{
+    Multiplier = Multi[i];
+    Position  = i+1;
+ Multiply = PeselDigits[i].toInteger()*Multiplier.toInteger();
+ sum += Multiply;
+   log.info(&quot;-------------Position------------   &quot; +Position);
+// log.info &quot;Digit -&quot; +PeselDigits[i]
+// log.info &quot;Multiplier&quot;+Multiplier
+// log.info &quot;Multiply -&quot; +Multiply
+//  log.info &quot;sum : &quot; +sum
+}
+CheckDigit = 10 - (sum % 10);
+//log.info &quot;CheckDigit : &quot; +CheckDigit
+
+ 
+
+if (CheckDigit != 10)
+  {Pesel = PeselDigits+CheckDigit.toString();
+//log.info Pesel
+}
+else {
+    LastDigit = 0;
+    Pesel = PeselDigits+LastDigit.toString();
+//    log.info Pesel
+}
+
+vars.put(&quot;PeselNumber&quot;,Pesel);
+log.info(&quot;PeselNumber -------------&gt; &quot;+Pesel);
+</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Generate registration data - PolishCardNumber" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import org.apache.commons.lang.RandomStringUtils;
+import java.util.Random;
+
+Random r = new Random();
+int Digits =r.nextInt(89999)+10000;
+//log.info Digits
+String stringDigits = Digits.toString();
+
+Letters = &quot;XYZ&quot;;
+LettersDigits = &quot;333435&quot;;
+
+def Multi = [7,3,1,7,3];
+
+sum = (33*7)+(34*3)+(35*1);
+log.info &quot;Initital Sum : &quot; +sum; 
+
+for (int i = 0; i &lt; stringDigits.length(); i++)
+{
+    Multiplier = Multi[i];
+    Position  = i+1;
+    Multiply = stringDigits[i].toInteger()*Multiplier.toInteger();
+    sum += Multiply;
+//   log.info &quot;-------------Position------------   &quot; +Position
+// log.info &quot;Digit -&quot; +stringDigits[i]
+// log.info &quot;Multiplier&quot;+Multiplier
+// log.info &quot;Multiply -&quot; +Multiply
+//  log.info &quot;sum : &quot; +sum
+}
+CheckDigit = sum % 10;
+//log.info CheckDigit
+
+PolishCardNumber = Letters+CheckDigit.toString()+stringDigits;
+log.info(&quot;Polish Card Number - &quot; +PolishCardNumber); 
+vars.put(&quot;PolishCardNumber&quot;,PolishCardNumber);</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Generate registration data - IBAN" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import java.util.Random;
+import java.lang.*;
+
+Random rand = new Random();
+String CountryCode = &quot;PL&quot;;
+int CountryCodeNum = 252100;
+String AccountNumber =&quot;&quot;;
+for (int i = 0; i &lt; 24; i++)
+    {
+        int n = rand.nextInt(9) + 1;
+        AccountNumber += Integer.toString(n);
+    }
+//log.info &quot;AccNumber - &quot; +AccountNumber
+//log.info &quot;CountryCode - &quot; +CountryCode
+
+String Dummy = AccountNumber.toString() + CountryCodeNum.toString();
+log.info &quot;Dummy - &quot; +Dummy;
+BigInteger DummyBigInt=new BigInteger(Dummy);
+
+//log.info &quot;DummyBigInt  -  &quot; +DummyBigInt
+int Calc = 98 -(DummyBigInt%97)
+//log.info &quot;RAW IBAN Check - &quot; + Calc
+String IBANCHECK = String.format(&quot;%02d&quot; , Calc);
+//log.info &quot;IBANCHECK - &quot; +IBANCHECK  
+
+String IBAN = CountryCode+IBANCHECK+AccountNumber;
+log.info &quot;IBAN - &quot; +IBAN;
+String FullAccountNumber = IBANCHECK+AccountNumber;
+log.info &quot;FullAccountNumber  - &quot; +FullAccountNumber;
+
+vars.put(&quot;IBAN&quot;,IBAN);
+vars.put(&quot;FullAccountNumber&quot;,FullAccountNumber);
+
+//IBAN VALIDATION
+String a= AccountNumber+&quot;2521&quot;+IBANCHECK
+//log.info a
+BigInteger b=new BigInteger(a);
+
+Validation=  b%97
+log.info(&quot;validation  - &quot; + Validation);</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1606201635">HTTP/1.1 200 OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">${__P(ESA_PROTOCOL)}://${__P(ESA_URL)}/content/interactive/igaming/en/registration.html</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.9,it;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">${__P(ESA_PROTOCOL)}://${__P(ESA_URL)}</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">1342</stringProp>
+              </elementProp>
+              <elementProp name="X-EXECUTE-SYNC" elementType="Header">
+                <stringProp name="Header.name">X-EXECUTE-SYNC</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">${__P(ESA_URL)}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">1342</stringProp>
+              </elementProp>
+              <elementProp name="X-EXECUTE-SYNC" elementType="Header">
+                <stringProp name="Header.name">X-EXECUTE-SYNC</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">x-product-id</stringProp>
+                <stringProp name="Header.value">100</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">x-partner-id</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">x-site-id</stringProp>
+                <stringProp name="Header.value">24</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">x-tx-time</stringProp>
+                <stringProp name="Header.value">${__time()}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">x-unique-id</stringProp>
+                <stringProp name="Header.value">${__UUID()}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">x-device-id</stringProp>
+                <stringProp name="Header.value">15</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">x-client-id</stringProp>
+                <stringProp name="Header.value">100.100.100.100</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">x-channel-id</stringProp>
+                <stringProp name="Header.value">5002</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">x-ex-system-id</stringProp>
+                <stringProp name="Header.value">5008</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)}. RegistrationFull  [API: /api/v2/players]" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;profile&quot;:{&quot;userName&quot;:&quot;${__P(USERNAME)}&quot;,&quot;nickName&quot;:&quot;${__P(USERNAME)}&quot;,&quot;language&quot;:&quot;en_US&quot;,&quot;preferredCurrency&quot;:&quot;USD&quot;,&quot;acceptsRewards&quot;:true,&quot;acceptedTermsAndConditionsDate&quot;:1622575281121,&quot;acceptTermsAndConditions&quot;:true,&quot;termsAndConditionsId&quot;:&quot;1621520620088&quot;,&quot;registrationLevel&quot;:2},&#xd;
+&quot;personalInfo&quot;:{&quot;firstName&quot;:&quot;${__RandomString(20,abcdefghijklmnopqrstuvwxyz,)}&quot;,&quot;middleName&quot;:&quot;&quot;,&quot;lastName&quot;:&quot;${__RandomString(20,abcdefghijklmnopqrstuvwxyz,)}&quot;,&quot;gender&quot;:&quot;FEMALE&quot;,&quot;citizenship&quot;:&quot;RESIDENT&quot;,&quot;dateOfBirth&quot;:-278812800000,&quot;emails&quot;:{&quot;PERSONAL&quot;:{&quot;type&quot;:&quot;PERSONAL&quot;,&quot;address&quot;:&quot;${__P(USERNAME)}@malinator.com&quot;,&quot;verified&quot;:false}},&quot;phones&quot;:{&quot;HOME&quot;:{&quot;type&quot;:&quot;HOME&quot;,&quot;number&quot;:&quot;11231212111&quot;}},&quot;addresses&quot;:{&quot;MAILING&quot;:{&quot;type&quot;:&quot;MAILING&quot;,&quot;address1&quot;:&quot;Via Peppino&quot;,&quot;postalCode&quot;:&quot;00134&quot;,&quot;city&quot;:&quot;Roma&quot;,&quot;state&quot;:&quot;MD&quot;,&quot;isoCountryCode&quot;:&quot;IT&quot;},&quot;BILLING&quot;:{&quot;type&quot;:&quot;BILLING&quot;,&quot;address1&quot;:&quot;Via Peppino&quot;,&quot;postalCode&quot;:&quot;00134&quot;,&quot;city&quot;:&quot;Roma&quot;,&quot;state&quot;:&quot;MD&quot;,&quot;isoCountryCode&quot;:&quot;IT&quot;}},&quot;passwordHints&quot;:[{&quot;securityQuestion&quot;:{&quot;question&quot;:&quot;securityQuestion.car&quot;},&quot;securityAnswer&quot;:{&quot;answer&quot;:&quot;Panda&quot;}}]},&#xd;
+&quot;nonpublicPersonalInfo&quot;:{&quot;dateOfBirth&quot;:-278812800000,&quot;feinNumber&quot;:&quot;&quot;,&quot;identificationNumber&quot;:&quot;&quot;,&quot;identificationIssuer&quot;:&quot;&quot;,&quot;socialSecurityNumber&quot;:&quot;0133&quot;,&quot;securityCode&quot;:&quot;&quot;},&#xd;
+&quot;password&quot;:&quot;${__P(PASSWORD)}&quot;,&#xd;
+&quot;termsAccepted&quot;:true,&#xd;
+&quot;consents&quot;:${consents}&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${__P(ESA_URL)}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">${__P(ESA_PROTOCOL)}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/v2/players</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="signData" enabled="true">
+            <boolProp name="resetInterpreter">true</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import java.util.concurrent.ThreadLocalRandom;
+
+Random randomGenerator = new Random();
+String NICK=&quot;plfr&quot;+&quot;${__time()}${__threadNum}&quot;;
+vars.putObject(&quot;USERNAME&quot;,NICK);
+String SSN = &quot;&quot; +  ThreadLocalRandom.current().nextInt(1000, 9999);
+
+vars.putObject(&quot;SSNESA&quot;,SSN);
+
+vars.putObject(&quot;PASSWORD&quot;,&quot;Welcome1&quot;);
+
+
+consents= props.get(&quot;consents&quot;);
+vars.putObject(&quot;consents&quot;,consents);
+
+props.put(&quot;USERNAME&quot;,NICK);
+props.put(&quot;PASSWORD&quot;,&quot;Welcome1&quot;);
+
+</stringProp>
+          </BeanShellPreProcessor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1606201635">HTTP/1.1 200 OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">${__P(ESA_PROTOCOL)}://${__P(ESA_URL)}/content/interactive/igaming/en/registration.html</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.9,it;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">${__P(ESA_PROTOCOL)}://${__P(ESA_URL)}</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="DNT" elementType="Header">
+                <stringProp name="Header.name">DNT</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">1342</stringProp>
+              </elementProp>
+              <elementProp name="X-EXECUTE-SYNC" elementType="Header">
+                <stringProp name="Header.name">X-EXECUTE-SYNC</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">true</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)}. GET ContractId (DB Connection: SMS_CONTRACTS )" enabled="true">
+            <stringProp name="dataSource">dbconnection</stringProp>
+            <stringProp name="query">SELECT a.CONTRACT_IDENTITY CONTRACT_IDENTITY
+FROM PAM_POL.SMS_CONTRACTS a, PAM_POL.SMS_CUSTOMER_KEY_ACCESS b
+WHERE b.value =&apos;${fk_uname}&apos; AND a.CONTRACT_ID=b.CONTRACT_ID </stringProp>
+            <stringProp name="queryArguments"></stringProp>
+            <stringProp name="queryArgumentsTypes"></stringProp>
+            <stringProp name="queryTimeout"></stringProp>
+            <stringProp name="queryType">Select Statement</stringProp>
+            <stringProp name="resultSetHandler">Store as Object</stringProp>
+            <stringProp name="resultVariable">resObj</stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="resultSetMaxRows"></stringProp>
+          </JDBCSampler>
+          <hashTree>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">Contract = vars.getObject(&quot;resObj&quot;).get(0).get(&quot;CONTRACT_IDENTITY&quot;);
+vars.putObject(&quot;CONTRACTID&quot;,Contract);
+props.put(&quot;CONTRACTID&quot;,Contract);</stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
+          </hashTree>
+          <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)}. GET Player token (DB Connection: SMS_TOKEN_TB )" enabled="true">
+            <stringProp name="dataSource">dbconnection</stringProp>
+            <stringProp name="query">Select PAM_POL.SMS_TOKEN_TB.UNIQUE_KEY
+As UNIQUE_KEY, PAM_POL.SMS_TOKEN_TB.TOKEN
+as TOKEN
+From PAM_POL.SMS_TOKEN_TB
+Where PAM_POL.SMS_TOKEN_TB.UNIQUE_KEY Like &apos;%&apos; || &apos;${fk_email}&apos; || &apos;%&apos;</stringProp>
+            <stringProp name="queryArguments"></stringProp>
+            <stringProp name="queryArgumentsTypes"></stringProp>
+            <stringProp name="queryTimeout"></stringProp>
+            <stringProp name="queryType">Select Statement</stringProp>
+            <stringProp name="resultSetHandler">Store as Object</stringProp>
+            <stringProp name="resultVariable">resObj</stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="resultSetMaxRows"></stringProp>
+          </JDBCSampler>
+          <hashTree>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">Token = vars.getObject(&quot;resObj&quot;).get(0).get(&quot;TOKEN&quot;);
+vars.putObject(&quot;Token&quot;,Token);
+UNIQUE_KEY = vars.getObject(&quot;resObj&quot;).get(0).get(&quot;UNIQUE_KEY&quot;);
+vars.putObject(&quot;UNIQUEKEY&quot;,UNIQUE_KEY);</stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
+          </hashTree>
+          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)}. Create URL Token" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import com.gtech.pd.utils.crypto.CryptoService;
+import com.gtech.pd.utils.crypto.CryptoServiceException;
+import com.gtech.pd.utils.crypto.CryptoUtil;
+import org.apache.commons.lang3.Validate;
+import org.apache.commons.codec.binary.Base64;
+
+
+//public class EncryptionUtils {
+// public static String encryptToken(&quot;${Token}&quot;, &quot;${UNIQUEKEY}&quot;) {
+
+unencryptedToken = &quot;${Token}&quot; + &quot;_&quot; + &quot;${UNIQUEKEY}&quot;;
+CryptoService service = new CryptoService();
+encryptionKey = &quot;[--*Some4ind0fs3cr3t%]&gt;&gt;...;&quot;
+//String encryptionKey = Validate.notNull(COMMON_CONFIGURATION.getString(&quot;all.vars.config.applications.common.encryptionKey&quot;), &quot;Encryption key cannot be null&quot;);
+service.setEncryptionKey(encryptionKey);
+CryptoUtil util = new CryptoUtil();
+util.setCryptoService(service);
+activationToken = util.encryptUrlToken(unencryptedToken);
+ 
+
+//log.info Base64.class.getProtectionDomain().getCodeSource().getLocation()
+//String activationToken = EncryptionUtils.encryptToken(TOKEN,UNIQUE_KEY);
+//log.info &quot;ActivationToken - &quot;+ activationToken;
+
+ 
+
+//def setTestCase = context.getTestCase(); 
+vars.put( &quot;URLTOKEN&quot;, activationToken);</stringProp>
+          </JSR223Sampler>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)} - ActivatePlayer [API: /api/v2/players/activate-account/${URLTOKEN}]" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${__P(ESA_URL)}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">${__P(ESA_PROTOCOL)}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/api/v2/players/activate-account/${URLTOKEN}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="false">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import Activation.EncryptionUtils;
+
+System.out.println(&quot;${UNIQUEKEY}&quot;);
+System.out.println(&quot;${ActivationToken}&quot;);
+
+
+try{
+EncryptionUtils obj = new EncryptionUtils();
+keyvalue = obj.encryptToken(&quot;${ActivationToken}&quot;,&quot;${UNIQUEKEY}&quot;);
+}catch (Throwable ex) {
+    log.error(&quot;Beanshell failure: &quot;, ex);
+    throw ex;
+}
+
+System.out.println(keyvalue);
+
+log.info(keyvalue);
+vars.put(&quot;key&quot;, keyvalue.toString());</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="false">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import Activation.EncryptionUtils;
+
+System.out.println(&quot;${UNIQUEKEY}&quot;);
+System.out.println(&quot;${ActivationToken}&quot;);
+
+
+
+EncryptionUtils obj = new EncryptionUtils();
+
+obj.print();
+</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Activate Account" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49590">204</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Scope.variable">status</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Boundary Extractor" enabled="true">
+              <stringProp name="BoundaryExtractor.useHeaders">true</stringProp>
+              <stringProp name="BoundaryExtractor.refname">STATUS10</stringProp>
+              <stringProp name="BoundaryExtractor.lboundary">HTTP/1.1 </stringProp>
+              <stringProp name="BoundaryExtractor.rboundary">No Content</stringProp>
+              <stringProp name="BoundaryExtractor.default">900</stringProp>
+              <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+              <stringProp name="BoundaryExtractor.match_number">1</stringProp>
+            </BoundaryExtractor>
+            <hashTree/>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-EXECUTE-ACTIVATION</stringProp>
+                  <stringProp name="Header.value">true</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">6000</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,5 @@
+groupID|Duration|PriceAmt|PrimarySel1|SecondarySel1|PrimarySel2|SecondarySel2|Powerplay|FavType
+2|1|400|11,12,23,24,69|7|1,22,33,14,15|8|"false"|Single Draw - Without Powerplay
+2|1|600|10,2,8,14,25|12|12,2,18,11,15|22|"true"|Single Draw - With Powerplay
+2|24|9600|11,12,23,24,35|7|1,22,33,14,69|8|"false"|Multi Draw - Without Powerplay
+2|39|23400|10,2,8,14,25|12|12,2,18,11,15|26|"true"|Multi Draw - With Powerplay

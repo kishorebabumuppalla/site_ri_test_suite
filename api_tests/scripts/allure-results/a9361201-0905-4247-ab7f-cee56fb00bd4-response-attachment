@@ -1,0 +1,40 @@
+[{
+    "status": "ACCEPTED",
+    "type": "NORMAL",
+    "drawId": "58427",
+    "duration": 1,
+    "gameName": "Keno",
+    "price": 100,
+    "id": "IR-16767-17457444317127330771-13393210156053830257-15",
+    "requestId": "f2454d1c-e889-4bd3-b9de-3dad39be1a71",
+    "serialNumber": "16767-000010912-15",
+    "boards": [    {
+        "quickpick": true,
+        "multiplier": false,
+        "primarySelections":         [
+            "4",
+            "10",
+            "11",
+            "14",
+            "19",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75"
+        ],
+        "primarySelectionsQuickpicked": true,
+        "secondarySelectionsQuickpicked": false,
+        "quickPickCount": 10
+    }],
+    "stake": 100,
+    "digest": "800ff17fa0ead11e2ac9cdf7dffa1616a810e0f5b49ca198676f0526a1955e59",
+    "drawStartDate": 1701106320000,
+    "drawEndDate": 1701106320000,
+    "drawDates": [1701106320000],
+    "discountAmount": 0,
+    "extraPlayed": false,
+    "autoTopUp": false,
+    "bullseyePlayed": false,
+    "playOptions": []
+}]

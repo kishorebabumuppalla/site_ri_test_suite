@@ -1,0 +1,155 @@
+{
+    "totalItems": 2,
+    "pageSize": 30,
+    "page": 0,
+    "sortBy": null,
+    "filterBy": null,
+    "include": null,
+    "exclude": null,
+    "transactions":     [
+                {
+            "globalTransactionId": "6b9c198c-35d4-4edc-b653-f395ca4f9808",
+            "correlationId": "9953dcbd15b7e54704f578bee14dbe8ed30bfff3",
+            "transactionTimeUTC": 1702623735139,
+            "id": "d0f619732bbbfa0b7f593b390f6f86c0925826fe",
+            "uuid": "91f4a4ee-abfe-451d-bbc7-924823b11b19",
+            "type": "VALIDATION",
+            "body":             {
+                "drawGameWagerDetails":                 {
+                    "drawIds": [58427],
+                    "drawTimes": [1701106320000]
+                },
+                "drawGameValidationDetails":                 {
+                    "winSet": 0,
+                    "drawTime": 1701106320000,
+                    "prizeTier": "LOW",
+                    "prizeType": "CASH",
+                    "drawNumber": 58427,
+                    "winSetType": "REGULAR",
+                    "jurisdiction": 8,
+                    "refExternalId": "880d0f73-d293-4feb-b321-2febcd2f1491",
+                    "validationType": "AUTO_CAP",
+                    "winningDivision": 6,
+                    "winningBoardIndex": 1
+                }
+            },
+            "extraParameters": null,
+            "linkedTransactions": null,
+            "wagerTransactionDetails": null,
+            "claimsTransactionDetails": null,
+            "validationTransactionDetails":             {
+                "serial": "10920",
+                "product": 15,
+                "transactionAmount": 200,
+                "transactionPointAmount": null,
+                "transactionVirtualAmount": null,
+                "currency": "USD",
+                "drawNumber": null,
+                "description": null,
+                "prizeType": null,
+                "prizeTier": null
+            },
+            "csPurchaseTransactionDetailsDTO": null
+        },
+                {
+            "globalTransactionId": "6b9c198c-35d4-4edc-b653-f395ca4f9808",
+            "correlationId": "9953dcbd15b7e54704f578bee14dbe8ed30bfff3",
+            "transactionTimeUTC": 1702623624576,
+            "id": "a973e2fa5aa8612dad06b8f829e7c92f0c0c660f",
+            "uuid": "IR-16767-9803508953983963115-12907650696826786961-15",
+            "type": "WAGER",
+            "body":             {
+                "drawGameBoards": {"drawGameBoardDetails": [                {
+                    "stake": 100,
+                    "betTypeId": "0",
+                    "boardIndex": 0,
+                    "boardPrice": 100,
+                    "drawGameBoardSelections": [                    {
+                        "quickpickCount": 10,
+                        "selectionTypeName": "PRIMARY",
+                        "drawGameBoardItems":                         [
+                                                        {
+                                "itemIndex": "0",
+                                "itemValue": "4"
+                            },
+                                                        {
+                                "itemIndex": "1",
+                                "itemValue": "10"
+                            },
+                                                        {
+                                "itemIndex": "2",
+                                "itemValue": "11"
+                            },
+                                                        {
+                                "itemIndex": "3",
+                                "itemValue": "14"
+                            },
+                                                        {
+                                "itemIndex": "4",
+                                "itemValue": "19"
+                            },
+                                                        {
+                                "itemIndex": "5",
+                                "itemValue": "21"
+                            },
+                                                        {
+                                "itemIndex": "6",
+                                "itemValue": "24"
+                            },
+                                                        {
+                                "itemIndex": "7",
+                                "itemValue": "27"
+                            },
+                                                        {
+                                "itemIndex": "8",
+                                "itemValue": "29"
+                            },
+                                                        {
+                                "itemIndex": "9",
+                                "itemValue": "67"
+                            }
+                        ]
+                    }]
+                }]},
+                "playerPreferences":                 {
+                    "autopayWinnings": true,
+                    "digitalTicketOnly": true
+                },
+                "drawGameWagerDetails":                 {
+                    "drawIds": [58427],
+                    "jurisdiction": 8,
+                    "productNumber": 15,
+                    "journalAddress": "372485",
+                    "trxLoyaltyPoints": 0
+                }
+            },
+            "extraParameters": null,
+            "linkedTransactions": null,
+            "wagerTransactionDetails":             {
+                "serial": "10920",
+                "product": 15,
+                "transactionAmount": 100,
+                "transactionDiscountAmount": 0,
+                "transactionPointAmount": null,
+                "currency": "USD",
+                "refCorrelationId": null,
+                "startDrawNumber": 58427,
+                "endDrawNumber": 58427,
+                "drawNumbers": null,
+                "isOpen": "false",
+                "transactionResults": [                {
+                    "drawId": 58427,
+                    "drawName": null,
+                    "drawTime": 1701061200000,
+                    "amount": 200,
+                    "validationIds": ["91f4a4ee-abfe-451d-bbc7-924823b11b19"],
+                    "status": "WINNING"
+                }],
+                "matchingNumbers": []
+            },
+            "claimsTransactionDetails": null,
+            "validationTransactionDetails": null,
+            "csPurchaseTransactionDetailsDTO": null
+        }
+    ]
+}

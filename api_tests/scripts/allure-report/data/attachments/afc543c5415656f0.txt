@@ -1,0 +1,14 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v1/draw-games/wagers
+[
+	{
+		"type": "NORMAL",
+		"duration": 1,
+		"delay" : 0,
+		"gameName": "Mega Millions",
+		"price": 200,
+		"stake": 200,
+		"boards": [{ "primarySelections":[65,17,22,46,34],"secondarySelections":[11],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":false,"quickpick":true}],
+  	     "requestId": "knwdonbgl4gdl38n7tpgwt83z1k92xnnos6o",
+		"digest": "6c3f5f47603c3b48722bb608e287adc3db7406c66ab692b99319a9642d308fd2"
+	}
+]

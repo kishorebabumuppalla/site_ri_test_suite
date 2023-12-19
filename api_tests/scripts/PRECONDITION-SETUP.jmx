@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="PreconditionTestSuite" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="CONF_PROPERTIES" elementType="Argument">
+            <stringProp name="Argument.name">CONF_PROPERTIES</stringProp>
+            <stringProp name="Argument.value">${__P(conf_path)}/conf.properties</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="RUNTYPE_CONF" elementType="Argument">
+            <stringProp name="Argument.name">RUNTYPE_CONF</stringProp>
+            <stringProp name="Argument.value">${__P(conf_path)}/runtype.properties</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <com.tag.jmeter.ext.config.PropertyReader guiclass="TestBeanGUI" testclass="com.tag.jmeter.ext.config.PropertyReader" testname="Load ConfPropos" enabled="true">
+        <stringProp name="propFilePath">${CONF_PROPERTIES}</stringProp>
+      </com.tag.jmeter.ext.config.PropertyReader>
+      <hashTree/>
+      <com.tag.jmeter.ext.config.PropertyReader guiclass="TestBeanGUI" testclass="com.tag.jmeter.ext.config.PropertyReader" testname="Load RuntypeConf" enabled="true">
+        <stringProp name="propFilePath">${RUNTYPE_CONF}</stringProp>
+      </com.tag.jmeter.ext.config.PropertyReader>
+      <hashTree/>
+      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration" enabled="true">
+        <boolProp name="autocommit">true</boolProp>
+        <stringProp name="checkQuery">select 1 from sysibm.sysdummy1</stringProp>
+        <stringProp name="connectionAge">5000</stringProp>
+        <stringProp name="dataSource">dbconnection</stringProp>
+        <stringProp name="dbUrl">jdbc:db2://${__P(DB2_HOST)}:${__P(DB2_PORT)}/CMDDB</stringProp>
+        <stringProp name="driver">com.ibm.db2.jcc.DB2Driver</stringProp>
+        <stringProp name="initQuery"></stringProp>
+        <boolProp name="keepAlive">true</boolProp>
+        <stringProp name="password">gtkinst1</stringProp>
+        <stringProp name="poolMax">1</stringProp>
+        <stringProp name="timeout">10000</stringProp>
+        <stringProp name="transactionIsolation">DEFAULT</stringProp>
+        <stringProp name="trimInterval">60000</stringProp>
+        <stringProp name="username">gtkinst1</stringProp>
+        <boolProp name="preinit">false</boolProp>
+        <stringProp name="connectionProperties"></stringProp>
+      </JDBCDataSource>
+      <hashTree/>
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="PRECONDITION-SETUP" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1499896347000</longProp>
+        <longProp name="ThreadGroup.end_time">1499896347000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">1</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </SetupThreadGroup>
+      <hashTree>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="LoadConf" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-722915730">PreconditionTestSuite</stringProp>
+            <stringProp name="1909745994">LoadConf</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="LoadConf" enabled="true"/>
+      <hashTree>
+        <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="[UP]-0. Set step properties" enabled="true">
+          <collectionProp name="UserParameters.names">
+            <stringProp name="-750825893">tc_name</stringProp>
+            <stringProp name="-849007572">tc_counter</stringProp>
+            <stringProp name="-1165461084">priority</stringProp>
+            <stringProp name="3500751">risk</stringProp>
+            <stringProp name="50511102">category</stringProp>
+            <stringProp name="109795064">suite</stringProp>
+          </collectionProp>
+          <collectionProp name="UserParameters.thread_values">
+            <collectionProp name="-1138483222">
+              <stringProp name="900548003">[TC]-Setup</stringProp>
+              <stringProp name="48">0</stringProp>
+              <stringProp name="3202466">high</stringProp>
+              <stringProp name="3202466">high</stringProp>
+              <stringProp name="2174">DB</stringProp>
+              <stringProp name="1666312664">PRECONDITION</stringProp>
+            </collectionProp>
+          </collectionProp>
+          <boolProp name="UserParameters.per_iteration">true</boolProp>
+        </UserParameters>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)}.  ReadRunTypeConfiguration" enabled="true">
+          <stringProp name="BeanShellSampler.query">SMOKETEST=props.get(&quot;FLAG_SMOKETEST&quot;);
+REGRESSIONTEST=props.get(&quot;FLAG_REGRESSION&quot;);
+if(SMOKETEST.equals(&quot;true&quot;)){
+	props.put(&quot;SMOKE&quot;,1);
+}else{
+	props.put(&quot;SMOKE&quot;,0);
+}
+
+
+if(REGRESSIONTEST.equals(&quot;true&quot;)){
+	props.put(&quot;REGRESSION&quot;,1);
+}else{
+	props.put(&quot;REGRESSION&quot;,0);
+}</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)}. Get Consent for Light Registration" enabled="false">
+          <stringProp name="dataSource">dbconnection</stringProp>
+          <stringProp name="query">SELECT &apos;{&quot;id&quot;:&quot;&apos;||b.CONSENT_TYPE_ID||&apos;&quot;,&quot;enabled&quot;:true,&quot;version&quot;:&quot;&apos;||
+b.version||&apos;&quot;,&quot;updateDate&quot;:1622575281121,&quot;language&quot;:&quot;en_US&quot;}&apos; as record
+FROM CMD_COMMON_CMD.CMO_CONSENT_USER_TYPE a,
+CMD_COMMON_CMD.CMO_CONS_DESCRIPTION_LANGUAGE b
+WHERE a.USER_TYPE_ID IN (5)
+AND (a.IS_CONSENT_MANDATORY=1 OR A.IS_MANDATORY_TRUE=1)
+AND a.CONSENT_TYPE_ID=b.CONSENT_TYPE_ID
+AND b.ACTIVE = 1
+AND A.STATUS = 1 
+AND b.LANGUAGE_ID = &apos;en_US&apos;
+ORDER BY a.id</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as Object</stringProp>
+          <stringProp name="resultVariable">resObj</stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="resultSetMaxRows"></stringProp>
+          <stringProp name="TestPlan.comments">From (DB Connection: CMO_CONS_DESCRIPTION_LANGUAGE )</stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">object=vars.getObject(&quot;resObj&quot;);
+length=object.size();
+
+consents=&quot;[&quot;;
+for(i=0;i&lt;length;i++)
+{
+	consent_version = object.get(i).get(&quot;RECORD&quot;);
+	if(i&lt;length-1)
+		consents=consents+consent_version+&quot;,&quot;;
+	else
+		consents=consents+consent_version;
+}
+
+consents=consents+&quot;]&quot;;
+vars.put(&quot;consentsLight&quot;, consents);</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)}. Get Consent for Full Registration" enabled="false">
+          <stringProp name="dataSource">dbconnection</stringProp>
+          <stringProp name="query">SELECT &apos;{&quot;id&quot;:&quot;&apos;||b.CONSENT_TYPE_ID||&apos;&quot;,&quot;enabled&quot;:true,&quot;version&quot;:&quot;&apos;||
+b.version||&apos;&quot;,&quot;updateDate&quot;:1622575281121,&quot;language&quot;:&quot;en_US&quot;}&apos; as record
+FROM CMD_COMMON_CMD.CMO_CONSENT_USER_TYPE a,
+CMD_COMMON_CMD.CMO_CONS_DESCRIPTION_LANGUAGE b
+WHERE a.USER_TYPE_ID IN (2)
+AND (a.IS_CONSENT_MANDATORY=1 OR A.IS_MANDATORY_TRUE=1)
+AND a.CONSENT_TYPE_ID=b.CONSENT_TYPE_ID
+AND b.ACTIVE = 1
+AND A.STATUS = 1 
+AND b.LANGUAGE_ID = &apos;en_US&apos;
+ORDER BY a.id</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as Object</stringProp>
+          <stringProp name="resultVariable">resObj</stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="resultSetMaxRows"></stringProp>
+          <stringProp name="TestPlan.comments">From  (DB Connection: CMO_CONS_DESCRIPTION_LANGUAGE )</stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">true</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">object=vars.getObject(&quot;resObj&quot;);
+length=object.size();
+
+consents=&quot;[&quot;;
+for(i=0;i&lt;length;i++){
+	
+	consent_version = object.get(i).get(&quot;RECORD&quot;);
+
+	if(i&lt;length-1)
+		consents=consents+consent_version+&quot;,&quot;;
+	else
+		consents=consents+consent_version;
+}
+
+consents=consents+&quot;]&quot;;
+vars.put(&quot;consents&quot;,consents);</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="[${__BeanShell(ctx.getThreadGroup().getName())}] GetConsent (DB Connection: CMO_CONS_DESCRIPTION_LANGUAGE )" enabled="false">
+          <stringProp name="dataSource">dbconnection</stringProp>
+          <stringProp name="query">SELECT VERSION FROM CMD_COMMON_CMD.CMO_CONS_DESCRIPTION_LANGUAGE WHERE CONSENT_TYPE_ID in (1,9,10,11,12) AND ACTIVE = 1 AND LANGUAGE_ID = &apos;en_US&apos; ORDER BY CONSENT_TYPE_ID</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as Object</stringProp>
+          <stringProp name="resultVariable">resObj</stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="resultSetMaxRows"></stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">consent1_version = vars.getObject(&quot;resObj&quot;).get(0).get(&quot;VERSION&quot;);
+consent9_version = vars.getObject(&quot;resObj&quot;).get(1).get(&quot;VERSION&quot;);
+consent10_version = vars.getObject(&quot;resObj&quot;).get(2).get(&quot;VERSION&quot;);
+consent11_version = vars.getObject(&quot;resObj&quot;).get(3).get(&quot;VERSION&quot;);
+consent12_version = vars.getObject(&quot;resObj&quot;).get(4).get(&quot;VERSION&quot;);
+
+props.put(&quot;CONSENT1_VERSION&quot;, consent1_version);
+props.put(&quot;CONSENT9_VERSION&quot;, consent9_version);
+props.put(&quot;CONSENT10_VERSION&quot;, consent10_version);
+props.put(&quot;CONSENT11_VERSION&quot;, consent11_version);
+props.put(&quot;CONSENT12_VERSION&quot;, consent12_version);
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)}. Set Consents" enabled="false">
+          <stringProp name="BeanShellSampler.query">${__setProperty(consents,${consents})};
+${__setProperty(consentsLight,${consentsLight})};</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="LoadPlayerCSV" enabled="true">
+          <stringProp name="IfController.condition">${__groovy(props.get(&quot;FLAG_NEWPLAYER&quot;).equals(&apos;false&apos;),)}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)}. ReadNumbersOfPlayers" enabled="true">
+            <stringProp name="BeanShellSampler.query">import org.apache.commons.io.FileUtils;
+int lines = FileUtils.readLines(new File(&quot;${__P(datapool_path)}&quot; + &quot;/players.csv&quot;)).size();
+vars.putObject(&quot;LINES_FROM_CSV&quot;, lines);</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="ReadPlayerFromCSV" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">${LINES_FROM_CSV}</stringProp>
+          </LoopController>
+          <hashTree>
+            <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="COUNTERALL" enabled="true">
+              <stringProp name="CounterConfig.start">1</stringProp>
+              <stringProp name="CounterConfig.end"></stringProp>
+              <stringProp name="CounterConfig.incr">1</stringProp>
+              <stringProp name="CounterConfig.name">COUNTERALL</stringProp>
+              <stringProp name="CounterConfig.format"></stringProp>
+              <boolProp name="CounterConfig.per_user">true</boolProp>
+              <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+            </CounterConfig>
+            <hashTree/>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set User" enabled="true">
+              <stringProp name="filename">${__P(datapool_path)}/players.csv</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="variableNames">USERNAME_FROM_CSV,PASSWORD_FROM_CSV,OPERATORID_FROM_CSV,CONTRACTID_FROM_CSV</stringProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.thread</stringProp>
+              <boolProp name="ignoreFirstLine">false</boolProp>
+            </CSVDataSet>
+            <hashTree/>
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="${__threadGroupName} - ${tc_name} - ${__intSum(${tc_counter},1,tc_counter)}. ReadPlayer" enabled="true">
+              <stringProp name="BeanShellSampler.query">${__setProperty(USERNAME,${USERNAME_FROM_CSV})}
+${__setProperty(PASSWORD,${PASSWORD_FROM_CSV})}
+${__setProperty(OPERATORID,${OPERATORID_FROM_CSV})}
+${__setProperty(CONTRACTID,${CONTRACTID_FROM_CSV})}
+${__setProperty(LINES_FROM_CSV,${LINES_FROM_CSV})}
+
+count=vars.get(&quot;COUNTERALL&quot;);
+us=vars.get(&quot;USERNAME_FROM_CSV&quot;);
+pwd=vars.get(&quot;PASSWORD_FROM_CSV&quot;);
+pd=vars.get(&quot;OPERATORID_FROM_CSV&quot;);
+contract=vars.get(&quot;CONTRACTID_FROM_CSV&quot;);
+
+userId=&quot;username_&quot;+count;
+pwdId=&quot;password_&quot;+count;
+pdId=&quot;product_&quot;+count;
+contId=&quot;contract_&quot;+count;
+
+props.put(userId,us);
+props.put(us,&quot;free&quot;);
+props.put(pwdId,pwd);
+props.put(pdId,pd);
+props.put(contId,contract);
+
+user = props.get(userId);
+log.info(&quot;user name is&quot;+user); </stringProp>
+              <stringProp name="BeanShellSampler.filename"></stringProp>
+              <stringProp name="BeanShellSampler.parameters"></stringProp>
+              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+            </BeanShellSampler>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

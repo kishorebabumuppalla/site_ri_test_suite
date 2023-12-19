@@ -1,0 +1,46 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v2/draw-games/favorite-wagers/wagers/1302
+{
+   "id" : "1302",
+   "group":{
+      "id":"2"
+   },
+   "wager":{
+      "type":"NORMAL",
+      "duration":1,
+      "gameName":"Powerball",
+      "price":600,
+      "stake":200,
+      "boards":[
+         {
+            "primarySelections":[29,28,45,24,3],
+            "secondarySelections": [25],
+            "quickPickCount":5,
+            "primarySelectionsQuickpicked":true,
+            "secondaryQuickPickCount":1,
+            "secondarySelectionsQuickpicked":true,
+            "multiplier":false,
+            "quickpick":true
+         },{
+            "primarySelections":[18,7,46,15,25],
+            "secondarySelections": [23],
+            "quickPickCount":5,
+            "primarySelectionsQuickpicked":true,
+            "secondaryQuickPickCount":1,
+            "secondarySelectionsQuickpicked":true,
+            "multiplier":false,
+            "quickpick":true
+         },{
+            "primarySelections":[11,20,28,12,63],
+            "secondarySelections": [1],
+            "quickPickCount":5,
+            "primarySelectionsQuickpicked":true,
+            "secondaryQuickPickCount":1,
+            "secondarySelectionsQuickpicked":true,
+            "multiplier":false,
+            "quickpick":true
+         }
+      ],
+      "delay":null,
+      "autoTopUp":false
+   }
+}

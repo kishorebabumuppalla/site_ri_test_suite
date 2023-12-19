@@ -1,0 +1,1 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v1/players/self/games/transactions?include-wager-results=true&transaction_type=VALIDATION&correlation-id=9953dcbd15b7e54704f578bee14dbe8ed30bfff3

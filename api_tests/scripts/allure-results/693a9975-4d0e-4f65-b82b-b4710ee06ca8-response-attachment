@@ -1,0 +1,109 @@
+{
+    "totalItems": 1,
+    "pageSize": 30,
+    "page": 0,
+    "sortBy": null,
+    "filterBy": null,
+    "include": null,
+    "exclude": null,
+    "transactions": [    {
+        "globalTransactionId": "ea184748-6f35-4822-a9ab-43bfa224a4c5",
+        "correlationId": "f740c48e577e3fa5cf25f5b8c1e5cf9bb4c659c4",
+        "transactionTimeUTC": 1702623604699,
+        "id": "3314f4352f70b28a0f286e9a65ea2dfe9302c6d4",
+        "uuid": "IR-16767-18011396792806035476-4329035900674899452-15",
+        "type": "WAGER",
+        "body":         {
+            "drawGameBoards": {"drawGameBoardDetails": [            {
+                "stake": 100,
+                "betTypeId": "0",
+                "boardIndex": 0,
+                "boardPrice": 100,
+                "drawGameBoardSelections": [                {
+                    "quickpickCount": 10,
+                    "selectionTypeName": "PRIMARY",
+                    "drawGameBoardItems":                     [
+                                                {
+                            "itemIndex": "0",
+                            "itemValue": "51"
+                        },
+                                                {
+                            "itemIndex": "1",
+                            "itemValue": "2"
+                        },
+                                                {
+                            "itemIndex": "2",
+                            "itemValue": "57"
+                        },
+                                                {
+                            "itemIndex": "3",
+                            "itemValue": "78"
+                        },
+                                                {
+                            "itemIndex": "4",
+                            "itemValue": "70"
+                        },
+                                                {
+                            "itemIndex": "5",
+                            "itemValue": "68"
+                        },
+                                                {
+                            "itemIndex": "6",
+                            "itemValue": "23"
+                        },
+                                                {
+                            "itemIndex": "7",
+                            "itemValue": "36"
+                        },
+                                                {
+                            "itemIndex": "8",
+                            "itemValue": "79"
+                        },
+                                                {
+                            "itemIndex": "9",
+                            "itemValue": "55"
+                        }
+                    ]
+                }]
+            }]},
+            "playerPreferences":             {
+                "autopayWinnings": true,
+                "digitalTicketOnly": true
+            },
+            "drawGameWagerDetails":             {
+                "drawIds": [58427],
+                "jurisdiction": 8,
+                "productNumber": 15,
+                "journalAddress": "372005",
+                "trxLoyaltyPoints": 0
+            }
+        },
+        "extraParameters": null,
+        "linkedTransactions": null,
+        "wagerTransactionDetails":         {
+            "serial": "10904",
+            "product": 15,
+            "transactionAmount": 100,
+            "transactionDiscountAmount": 0,
+            "transactionPointAmount": null,
+            "currency": "USD",
+            "refCorrelationId": null,
+            "startDrawNumber": 58427,
+            "endDrawNumber": 58427,
+            "drawNumbers": null,
+            "isOpen": "true",
+            "transactionResults": [            {
+                "drawId": 58427,
+                "drawName": null,
+                "drawTime": 1701061200000,
+                "amount": null,
+                "validationIds": [],
+                "status": "OPEN"
+            }],
+            "matchingNumbers": []
+        },
+        "claimsTransactionDetails": null,
+        "validationTransactionDetails": null,
+        "csPurchaseTransactionDetailsDTO": null
+    }]
+}

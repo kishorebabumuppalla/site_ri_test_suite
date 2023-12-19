@@ -1,0 +1,19 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v2/draw-games/subscriptions/
+{
+  "subscriptionDuration": 1,
+  "autoRenew": true,
+  "autoTopUp": false,
+  "drawDays": [ "FRIDAY", "TUESDAY" ],
+  "wager": {
+    "type":"NORMAL",
+    "duration": 1,
+    "gameName": "Mega Millions",
+    "price": 200,
+    "stake": 200,
+    "boards":[{ "primarySelections":[1,70,22,4,17],"secondarySelections":[22],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":false,"quickpick":true}],
+    "groupId": null,
+    "requestId": "mh9nib86yf3exkfm1f6a0oonga0474cqrmhb",
+    "digest": "4c21d609c076833180308c3cba72388bc3d40247dd6a06a05868c37905d92a71"
+  },
+  "parentId": null
+}

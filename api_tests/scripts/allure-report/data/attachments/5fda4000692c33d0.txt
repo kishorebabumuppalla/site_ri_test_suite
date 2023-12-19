@@ -1,0 +1,1 @@
+{"favoriteWagerGroups":[{"id":"1","name":"Empty"},{"id":"2","name":"Empty"},{"id":"3","name":"Empty"},{"id":"4","name":"Empty"},{"id":"5","name":"Empty"},{"id":"6","name":"Empty"},{"id":"7","name":"Empty"},{"id":"8","name":"Empty"},{"id":"9","name":"Empty"},{"id":"10","name":"Empty"}]}

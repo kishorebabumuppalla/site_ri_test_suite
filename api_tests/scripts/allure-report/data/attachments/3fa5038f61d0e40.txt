@@ -1,0 +1,19 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v2/draw-games/subscriptions/
+{
+  "subscriptionDuration": 1,
+  "autoRenew": true,
+  "autoTopUp": false,
+ "drawDays": [ "MONDAY", "TUESDAY" , "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY" ],
+  "wager": {
+    "type":"NORMAL",
+    "duration": 1,
+    "gameName": "Lucky For Life",
+    "price": 600,
+    "stake": 200,
+    "boards":[{ "primarySelections":[45,22,13,12,9],"secondarySelections":[5],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":false,"quickpick":true},{ "primarySelections":[6,12,48,41,2],"secondarySelections":[3],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":false,"quickpick":true},{ "primarySelections":[13,31,37,12,29],"secondarySelections":[8],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":false,"quickpick":true}],
+    "groupId": null,
+    "requestId": "utou1yhj7ne8eo77t95ne03h623xv95z2sya",
+    "digest": "fba5eaa0ab0cf2e644bf084f80037fc95c85cbc0135021e6428e1717f1a1ffe7"
+  },
+  "parentId": null
+}

@@ -1,0 +1,28 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v2/draw-games/subscriptions/1141
+{
+  "subscriptionDuration": 1,
+  "autoRenew": true,
+  "autoTopUp": false,
+  "drawDays": [
+    "MONDAY",
+    "WEDNESDAY",
+    "SATURDAY"
+  ],
+  "description": "My Subscription",
+  "wager": {
+    "type": "SUBSCRIPTION",
+    "drawIds": [
+      "${drawID}"
+    ],
+    "duration": 1,
+    "gameName": "Powerball",
+    "price": 300,
+    "stake": 200,
+    "boards":[{ "primarySelections":[12,61,15,7,53],"secondarySelections":[4],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":true,"quickpick":true}],
+    "transactionTime": 1702623554885,
+    "requestId": "2le5f2m67fa3bvg8bow1pxsf5s61dmpptk1t",
+    "digest": "151636490722a8938bb7d8e47e2f5d573f87ee43074a928c457a4ea4f5924fd6"
+  },
+  "status": "PAUSED",
+  "parentId": null
+}

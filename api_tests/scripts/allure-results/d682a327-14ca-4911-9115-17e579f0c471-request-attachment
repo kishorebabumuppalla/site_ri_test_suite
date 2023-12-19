@@ -1,0 +1,24 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v2/draw-games/subscriptions/1137
+{
+  "subscriptionDuration": 1,
+  "autoRenew": true,
+  "autoTopUp": false,
+ "drawDays": [ "MONDAY", "TUESDAY" , "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY" ],
+  "description": "My Subscription",
+  "wager": {
+    "type": "SUBSCRIPTION",
+    "drawIds": [
+      "${drawID}"
+    ],
+    "duration": 1,
+    "gameName": "Lucky For Life",
+    "price": 600,
+    "stake": 200,
+    "boards":[{ "primarySelections":[45,22,13,12,9],"secondarySelections":[5],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":false,"quickpick":true},{ "primarySelections":[6,12,48,41,2],"secondarySelections":[3],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":false,"quickpick":true},{ "primarySelections":[13,31,37,12,29],"secondarySelections":[8],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":false,"quickpick":true}],
+    "transactionTime": 1702623460711,
+    "requestId": "diymf9jghisdw5irq8w3zz4vvqkvbq1jehtv",
+    "digest": "fba5eaa0ab0cf2e644bf084f80037fc95c85cbc0135021e6428e1717f1a1ffe7"
+  },
+  "status": "CANCELLED",
+  "parentId": null
+}

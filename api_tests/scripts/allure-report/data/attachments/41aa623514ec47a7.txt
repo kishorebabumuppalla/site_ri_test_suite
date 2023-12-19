@@ -1,0 +1,1 @@
+{"generatorId":"aw-random-helm-8578dbc849-7ntql-1402","timeStamp":1702623484854,"boardSpecs":[{"numberOfBoards":1,"numberOfSelections":5,"rangeMin":1,"rangeMax":48,"withReplacement":false,"rangeExclusions":[],"boards":[[28,2,18,40,3]]},{"numberOfBoards":1,"numberOfSelections":1,"rangeMin":1,"rangeMax":18,"withReplacement":false,"rangeExclusions":[],"boards":[[5]]}]}

@@ -1,0 +1,16 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v2/draw-games/wagers
+[
+    {
+       
+        "digest": "6b83eb422d1666bb9c8d9ae8bfbdd61d48dc1951c8de8de7755a6ae8e73f575e",
+        "duration": 1,
+        "gameName": "Keno",
+        "price": 100,
+        "stake": 100,
+        "type": "NORMAL",
+        "boards": [{"primarySelections":[4,10,11,14,19,21,24,27,29,67],"quickPickCount":10,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":0,"secondarySelectionsQuickpicked":false,"multiplier":false,"quickpick":true}]
+    }
+]
+
+
+

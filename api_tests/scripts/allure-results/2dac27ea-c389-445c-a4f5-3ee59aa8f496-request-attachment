@@ -1,0 +1,28 @@
+https://ris-draw-q1.igtilotteryedrawtest.com/api/v2/draw-games/subscriptions/1142
+{
+  "subscriptionDuration": 1,
+  "autoRenew": true,
+  "autoTopUp": false,
+  "drawDays": [
+    "MONDAY",
+    "WEDNESDAY",
+    "SATURDAY"
+  ],
+  "description": "My Subscription",
+  "wager": {
+    "type": "SUBSCRIPTION",
+    "drawIds": [
+      "${drawID}"
+    ],
+    "duration": 1,
+    "gameName": "Powerball",
+    "price": 1500,
+    "stake": 200,
+    "boards":[{ "primarySelections":[15,12,64,51,29],"secondarySelections":[14],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":true,"quickpick":true},{ "primarySelections":[30,58,16,10,25],"secondarySelections":[12],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":true,"quickpick":true},{ "primarySelections":[38,36,60,45,47],"secondarySelections":[14],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":true,"quickpick":true},{ "primarySelections":[29,55,2,24,38],"secondarySelections":[24],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":true,"quickpick":true},{ "primarySelections":[39,32,54,25,5],"secondarySelections":[19],"quickPickCount":5,"primarySelectionsQuickpicked":true,"secondaryQuickPickCount":1,"secondarySelectionsQuickpicked":true,"multiplier":true,"quickpick":true}],
+    "transactionTime": 1702623571206,
+    "requestId": "z1evwbxk5pe9k7t9tdqi4y23moehcnxgb3ey",
+    "digest": "173a36d3c5ac796c91676f8df624a8727bac606eed410c957e556b4331c4678d"
+  },
+  "status": "ACTIVE",
+  "parentId": null
+}

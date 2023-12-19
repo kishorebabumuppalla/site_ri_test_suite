@@ -1,0 +1,13 @@
+https://ris-d9.i1.awc.lotteryservices.net/api/v1/random/quickpicks
+{
+  "boardSpecs": [
+    {
+      "numberOfSelections": 5,
+      "rangeMin": 1,
+      "rangeMax": 38,
+      "withReplacement": false,
+      "rangeExclusions": [],
+      "numberOfBoards": 1
+    }
+  ]
+}

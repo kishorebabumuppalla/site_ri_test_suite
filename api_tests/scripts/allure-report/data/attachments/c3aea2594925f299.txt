@@ -1,0 +1,2 @@
+https://cmdsecgw-rhi-lot-cmd-s1-northeurope.igtilotterycmdtest.com/api/v1/oauth/self/tokens
+{"siteId":8,"clientId":"RHIPortalApp","token":"authToken","tokenType":"OAuth"}
